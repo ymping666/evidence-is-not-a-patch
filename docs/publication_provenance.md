@@ -16,6 +16,7 @@ The public edition preserves all frozen experimental results. Changes from the f
 8. Tighten the abstract and research questions around check-to-artifact continuity, explicitly distinguish event-level source drift from candidate-conditioned replay, and foreground the released audit protocol. This changes no measured outcome.
 9. Normalize the numbered reference list and BibTeX metadata against first-party publication records; in particular, cite SWE-bench as ICLR 2024 rather than only its 2023 preprint.
 10. Replace potentially misleading preregistration shorthand with "locally prespecified" or "hash-locked before main runs," and keep the exploratory SEAL and later CPU ablations separate from controlled causal evidence.
+11. Show the full clickable public repository URL immediately under the title and subtitle in the PDF, in addition to the artifact link in the closing section.
 
 All original numerical outcomes, UNKNOWN labels and separate source-adjudication decisions remain unchanged. Original and later CPU scoring are distinguished in both the data and manuscript. No model or task scorer was invoked to produce this release.
 
@@ -23,4 +24,4 @@ Source commitments for the numerical exports are in [data/provenance.json](../da
 
 The repository starts with its own new public history. No private branches, commits, Git objects, workspaces, full archives, task tests or scorer implementations are imported. This release is a scoped research export, not a reproduction of the entire development environment.
 
-`paper/build_receipt.json` records the exact released Markdown/PDF hashes and counting conventions. Markdown contains 2,704 whitespace-separated words (2,794 lexical words), including captions, tables and references. Extracted PDF text contains 2,759 whitespace-separated words (2,883 lexical words), including figure text, repeated headers/footers, page numbers and references. Lexical counting uses `[A-Za-z0-9]+(?:[-_'][A-Za-z0-9]+)*` on the plain text; no reference or footer exemption is needed. Scholarly editing and layout changes do not modify experimental results.
+`paper/build_receipt.json` records the exact released Markdown/PDF hashes and counting conventions. Markdown contains 2,707 whitespace-separated words (2,806 lexical words), including captions, tables and references. Extracted PDF text contains 2,762 whitespace-separated words (2,890 lexical words), including figure text, repeated headers/footers, page numbers and references. Lexical counting uses `[A-Za-z0-9]+(?:[-_'][A-Za-z0-9]+)*` on the plain text; no reference or footer exemption is needed. Scholarly editing and layout changes do not modify experimental results.

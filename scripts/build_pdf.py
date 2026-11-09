@@ -82,6 +82,7 @@ def main():
     styles=getSampleStyleSheet()
     styles.add(ParagraphStyle(name='PaperTitle',fontName='PaperSerif-Bold',fontSize=18,leading=22,spaceAfter=9,textColor=colors.HexColor('#182b3a')))
     styles.add(ParagraphStyle(name='PaperSubtitle',fontName='PaperSerif-Italic',fontSize=10,leading=13,spaceAfter=11))
+    styles.add(ParagraphStyle(name='PaperArtifact',fontName='PaperSans',fontSize=8.5,leading=12,spaceAfter=10,textColor=colors.HexColor('#285f85')))
     styles.add(ParagraphStyle(name='PaperBody',fontName='PaperSerif',fontSize=9.5,leading=12.5,spaceAfter=5.5))
     styles.add(ParagraphStyle(name='PaperH2',fontName='PaperSerif-Bold',fontSize=11.6,leading=15,spaceBefore=10,spaceAfter=6,keepWithNext=True,textColor=colors.HexColor('#182b3a')))
     styles.add(ParagraphStyle(name='PaperCaption',fontName='PaperSerif',fontSize=8.4,leading=11,spaceBefore=4,spaceAfter=8))
@@ -93,6 +94,7 @@ def main():
         block=blocks[i].strip()
         if block.startswith('# '):story.append(Paragraph(markup(block[2:]),styles['PaperTitle']))
         elif block.startswith('**Subtitle:**'):story.append(Paragraph(markup(block.replace('**Subtitle:**','').strip()),styles['PaperSubtitle']))
+        elif block.startswith('**Artifact repository:**'):story.append(Paragraph(markup(block),styles['PaperArtifact']))
         elif block.startswith('## '):
             references=block=='## References';story.append(Paragraph(markup(block[3:]),styles['PaperH2']))
         elif block.startswith('!['):

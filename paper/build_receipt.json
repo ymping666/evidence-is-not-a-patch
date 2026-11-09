@@ -2,14 +2,14 @@
   "schema": "PUBLIC_PAPER_BUILD_RECEIPT_V1",
   "release_version": "2026-11-09",
   "frozen_parent_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
-  "public_markdown_sha256": "31848e5fbc043fee9727599fda3c0c990322683249c50371827c43631e935a17",
-  "public_PDF_sha256": "004ec5305090110f95e6f85f797eb83426904339c811f06313cd3e8b7810e48c",
+  "public_markdown_sha256": "0c2e94a28e10bbb038619adedab9082f4453c36bc3c41f141706e99fcd251bde",
+  "public_PDF_sha256": "5b406545830d9b7ca5a8f0edb3d1a36cdb9e9132b18eeca12cb219c32e21e007",
   "PDF_pages": 6,
   "word_counts": {
-    "markdown_whitespace_including_tables_captions_references": 2704,
-    "markdown_lexical_including_tables_captions_references": 2794,
-    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2759,
-    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2883,
+    "markdown_whitespace_including_tables_captions_references": 2707,
+    "markdown_lexical_including_tables_captions_references": 2806,
+    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2762,
+    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2890,
     "cap": 3000,
     "reference_or_footer_exemption_used": false
   },
@@ -18,7 +18,8 @@
     "Merged old Table4 temporal stratum into Table3; no numerical outcome changed",
     "Replaced obsolete private-artifact availability paragraph with public-release scope",
     "Linked the public artifact in the manuscript, shortened Figure 1 labels, embedded licensed DejaVu font subsets, and kept each table with its caption",
-    "Audited official Kaggle Paper Track requirements, tightened the source-bound evidence argument, normalized first-party paper citations (including SWE-bench ICLR 2024), and clarified locally prespecified versus exploratory interventions; no experimental outcome changed"
+    "Audited official Kaggle Paper Track requirements, tightened the source-bound evidence argument, normalized first-party paper citations (including SWE-bench ICLR 2024), and clarified locally prespecified versus exploratory interventions; no experimental outcome changed",
+    "Placed the complete clickable GitHub artifact URL under the title and subtitle on page 1"
   ],
   "new_agent_generations": 0,
   "new_task_scoring_executions": 0,

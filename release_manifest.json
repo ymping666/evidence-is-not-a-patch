@@ -184,8 +184,8 @@
     },
     {
       "path": "docs/publication_provenance.md",
-      "bytes": 3400,
-      "sha256": "cd1d447a2dbcbd2fb98b451b0f058e17fe5f60693873f556f5ebfa35cbb9c6b5",
+      "bytes": 3560,
+      "sha256": "123d019ce10b6bd48d5643ba62b21c5638f59ac4d7c0932cf6eff32eb464777b",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
@@ -232,8 +232,8 @@
     },
     {
       "path": "paper/build_receipt.json",
-      "bytes": 2000,
-      "sha256": "dacbb07deeb99aa1ed7d3e47a914bb3d0796b8f70406e6bc9ba02578fd9ec581",
+      "bytes": 2096,
+      "sha256": "6ba7a6c7f96b992855165ab8da21b7e875ce92c5b93b33044eb9414b61b120cf",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -264,16 +264,16 @@
     },
     {
       "path": "paper/paper.md",
-      "bytes": 20060,
-      "sha256": "31848e5fbc043fee9727599fda3c0c990322683249c50371827c43631e935a17",
+      "bytes": 20195,
+      "sha256": "0c2e94a28e10bbb038619adedab9082f4453c36bc3c41f141706e99fcd251bde",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 143520,
-      "sha256": "004ec5305090110f95e6f85f797eb83426904339c811f06313cd3e8b7810e48c",
+      "bytes": 143856,
+      "sha256": "5b406545830d9b7ca5a8f0edb3d1a36cdb9e9132b18eeca12cb219c32e21e007",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -296,8 +296,8 @@
     },
     {
       "path": "scripts/build_pdf.py",
-      "bytes": 8909,
-      "sha256": "2121c9b9b13a10e56b502bd5d80878d5b08488617806f8ffc9caa813d55e1874",
+      "bytes": 9179,
+      "sha256": "7a9d577e48ddb8b983005ca8e17c1bbdebbcdac4c6bf0845f14ffe4b6e24789a",
       "category": "new_statistical_or_presentation_utility",
       "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
       "public_release_authorized": true
