@@ -18,12 +18,12 @@
 <text x="512" y="162" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">and current source</text>
 <line x1="711" y1="129" x2="722" y2="129" stroke="#526473" stroke-width="2"/><polygon points="730,129 721,124 721,134" fill="#526473"/>
 <rect x="733" y="72" width="210" height="116" rx="8" fill="#f2f6f9" stroke="#cbdce9"/>
-<text x="747" y="103" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#182b3a">Artifact commitment</text>
+<text x="747" y="103" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#182b3a">Artifact handoff</text>
 <text x="747" y="136" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">Retained patch</text>
 <text x="747" y="162" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">and submit timing</text>
 <line x1="946" y1="129" x2="957" y2="129" stroke="#526473" stroke-width="2"/><polygon points="965,129 956,124 956,134" fill="#526473"/>
 <rect x="968" y="72" width="210" height="116" rx="8" fill="#f2f6f9" stroke="#cbdce9"/>
-<text x="982" y="103" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#182b3a">Independent result</text>
+<text x="982" y="103" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#182b3a">External result</text>
 <text x="982" y="136" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">Returned artifact</text>
 <text x="982" y="162" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">passes fixed grading</text>
 <text x="28" y="231" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Descriptive, not causal.</text>

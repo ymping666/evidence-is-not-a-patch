@@ -120,7 +120,7 @@ The panels are small, development-directed, reused, heterogeneous, and not an in
 
 Semantic labels are secondary: 148 targeted assistant-inspected units include 78 intent packets, 61 checks, and nine probes. Check judgments are 43 limited-relevance, eight non-covering, ten uncertain. Asgineer extremes do not establish 90% boundary coverage. Four core historical cases receive additional claim-level assistant confirmation; P120's Abjad and Marshmallow reviews remain targeted, not semantic review of all 72 runs. Human confirmations remain zero; no assistant review is called human certification.
 
-The public research artifact contains anonymized numerical data, source hashes, three licensed Abjad patches, and CPU statistical validation scripts. It excludes private tests, the task scorer, full snapshots, and raw trajectories. Statistical recomputation is not new agent execution; reproducing private test outcomes still requires unavailable scoring assets.
+The [public artifact](https://github.com/ymping666/evidence-is-not-a-patch) provides anonymized statistics, source hashes, Abjad patches, and CPU verification scripts. It excludes private tests, the task scorer, full snapshots, and raw trajectories. Statistical recomputation is not new agent execution; reproducing private test outcomes still requires unavailable scoring assets.
 
 The main contribution is identifying auditable breaks between local objectives and verified repair. SEAL is an exploratory intervention; lower loss, zero-exit checks, or a passing uncommitted workspace alone do not establish improved complete-task delivery.
 

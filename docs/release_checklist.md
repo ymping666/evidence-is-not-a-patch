@@ -12,7 +12,7 @@ This checklist concerns the selected release, not the complete development repos
 - [x] Upstream MIT notice read from the same frozen source snapshot, preserved byte for byte, and linked beside the patches. No blanket relicensing of third-party or excluded material.
 - [x] All text and structured exports scanned for credential forms, machine paths/endpoints and private repository URLs; data keys/contents inspected for excluded payloads. Public PDF text was separately extracted and inspected before its exact bytes were manifest-pinned.
 - [x] No private tests, reference/gold repairs, task scorer, full source snapshot, model/environment binary, prompt bundle, API archive, old reviewer ZIP, credential or private history is included.
-- [x] SVGs contain editable text/vector primitives, with no raster images, embedded font, external resource or script. Every PDF page was visually inspected; no attachments, JavaScript or embedded font file were found.
+- [x] SVGs contain editable text/vector primitives, with no raster images, embedded font, external resource or script. Every PDF page was visually inspected; no attachments or JavaScript were found. The PDF embeds properly licensed DejaVu font subsets for stable cross-platform text display; the upstream notice is supplied in `LICENSES/dejavu-fonts.txt`.
 - [x] Standard-library statistics and release checks run from a clean copied release directory, without access to private data, scorer, Kaggle credentials, GPU or model.
 - [x] Detailed protocols, actual recorded environments, source commitments, local-preregistration limitations and reproduction boundaries are disclosed.
 

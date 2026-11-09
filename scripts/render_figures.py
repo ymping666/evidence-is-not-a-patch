@@ -27,7 +27,7 @@ class SVG:
 def figure1(out):
     s=SVG(1200,250,'Repair realization has multiple observable links','Conceptual audit map. No stage is asserted necessary for every task; supplied correct candidates may bypass new editing.')
     s.text(28,35,'Repair realization links',25,weight='bold')
-    cards=[('Repair intent',['Concrete operation','and Issue behavior']),('Tool execution',['Accepted operation','and actual source diff']),('Local evidence',['Behavior coverage','and current source']),('Artifact commitment',['Retained patch','and submit timing']),('Independent result',['Returned artifact','passes fixed grading'])]
+    cards=[('Repair intent',['Concrete operation','and Issue behavior']),('Tool execution',['Accepted operation','and actual source diff']),('Local evidence',['Behavior coverage','and current source']),('Artifact handoff',['Retained patch','and submit timing']),('External result',['Returned artifact','passes fixed grading'])]
     for i,(title,lines)in enumerate(cards):
         x=28+i*235;s.rect(x,72,210,116,'#f2f6f9',LIGHT,8);s.text(x+14,103,title,21,weight='bold');s.lines(x+14,136,lines,18,MUTED)
         if i<4:s.arrow(x+213,129,x+232)

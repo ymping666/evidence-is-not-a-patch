@@ -2,7 +2,7 @@
   "schema": "SELECTED_PUBLIC_RESEARCH_RELEASE_MANIFEST_V1",
   "release_version": "2026-11-09",
   "repository": "ymping666/evidence-is-not-a-patch",
-  "file_count_excluding_manifest": 36,
+  "file_count_excluding_manifest": 37,
   "manifest_is_separate_control_file": true,
   "private_git_history_imported": false,
   "frozen_parent_manuscript_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
@@ -39,17 +39,25 @@
       "public_release_authorized": true
     },
     {
+      "path": "LICENSES/dejavu-fonts.txt",
+      "bytes": 2655,
+      "sha256": "e5a3139c7271e6ba5a44554915d8d69eb16b01593f6822c9a1bfee9440204618",
+      "category": "third_party_license_notice",
+      "rights_basis": "Permissively licensed DejaVu/Bitstream Vera font-subset attribution, notice and disclaimer",
+      "public_release_authorized": true
+    },
+    {
       "path": "README.md",
-      "bytes": 4694,
-      "sha256": "f7aa199a9ed79be1b975ead9765c7796990c0a93718896f65c937fc9a99d5a76",
+      "bytes": 4747,
+      "sha256": "002eab820c7265472f074daa622c0536ab63dc248f3b41f04b480c7df7440fc6",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "RIGHTS.md",
-      "bytes": 1460,
-      "sha256": "d13bb435d01fe210ce7ae994b04e3929bbfdc4bc326487a8daf02a6da97d297a",
+      "bytes": 1615,
+      "sha256": "0c574aff36d791325ba107ee207a69fee1828b5eef8313885135b53c4579a22f",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
@@ -176,24 +184,24 @@
     },
     {
       "path": "docs/publication_provenance.md",
-      "bytes": 2339,
-      "sha256": "1b4d586cb4e575813dcc705818870d5044fc6b76f497e87c96bdfee4cc20b2ab",
+      "bytes": 2623,
+      "sha256": "a6c239895a2da8a8d977d810879ed2043b48918817569fd7394db6d42e8ffdc2",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "docs/publishing_build.md",
-      "bytes": 2444,
-      "sha256": "51470dde2fddaa0cb9ae0f585786917f4426e3404e1b0758476f5971fa0f386b",
+      "bytes": 3076,
+      "sha256": "7b4f0531fdf0dca5c29267d6eb89f1d6ea2432a65bd4dea5ec3a02483c70baa7",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "docs/release_checklist.md",
-      "bytes": 3007,
-      "sha256": "9f46af9a0f1d28dd6e6ae49a8fc6d41940bea49940b47f2dff90ddda31970d52",
+      "bytes": 3144,
+      "sha256": "2cb10d6eb50881e43f8ffe3b793fbcfc59527a8f6ffba1be164121ee3f439c2b",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
@@ -208,24 +216,24 @@
     },
     {
       "path": "docs/third_party_licenses.md",
-      "bytes": 3270,
-      "sha256": "15ce5ce60b2681df63f38c661c9e784d1940b955325f18726b4b8a6cb9262949",
+      "bytes": 3454,
+      "sha256": "844ece2ff791b1d8432488eba7c4aa32ceeea764b5f37b3a40a3bd07dbe3e2d6",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/build_receipt.json",
-      "bytes": 1488,
-      "sha256": "fc704b2623d1131abb314651f6f1eef8499397f93db900d8e08ac35c1a18d5cc",
+      "bytes": 1724,
+      "sha256": "163ffc5b53e607e855b60bfa4ed9951d5580f7b4a83cab611e0b6a8797faddac",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/figures/figure1_repair_chain.svg",
-      "bytes": 4116,
-      "sha256": "e37b830e6c3a11caad16b261ad5a39e095247f70c323584c0025690c37752620",
+      "bytes": 4110,
+      "sha256": "0954b0ca1e71f59917116f45dcc637ace47701ef96bdf88111621f323eb6358c",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -248,16 +256,16 @@
     },
     {
       "path": "paper/paper.md",
-      "bytes": 20915,
-      "sha256": "877e9ed9c63ab2be6d47a87c2721dd84d746af0a2c27dc9bc86914d65705887e",
+      "bytes": 20933,
+      "sha256": "c22dfa4c3bb82eea7630a5670358723e5f27efa690d0885ce57250421fb57e15",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 26374,
-      "sha256": "d5585c4586e23cabf1d1314f9725cca4b1db453aec939c8221fd8b344a3c4453",
+      "bytes": 143639,
+      "sha256": "0ad33d61055f1dfcc8166fed050c467f3ba9666a63a689ca800d358b1285fa70",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -280,8 +288,8 @@
     },
     {
       "path": "scripts/build_pdf.py",
-      "bytes": 6720,
-      "sha256": "3dbe9300823b54ae7617993c4ca3fc5cca848bda3e8c1f35ede8baa69d44c2c6",
+      "bytes": 8909,
+      "sha256": "2121c9b9b13a10e56b502bd5d80878d5b08488617806f8ffc9caa813d55e1874",
       "category": "new_statistical_or_presentation_utility",
       "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
       "public_release_authorized": true
@@ -296,8 +304,8 @@
     },
     {
       "path": "scripts/render_figures.py",
-      "bytes": 6955,
-      "sha256": "f12485d8e42a2f4c08e1d0ce9eba30bc52f92954e643d574b926102b663b2b83",
+      "bytes": 6949,
+      "sha256": "9be4c778bb5083e5d7f522641948fc73f31f422f2063d26900c038f16166e12c",
       "category": "new_statistical_or_presentation_utility",
       "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
       "public_release_authorized": true

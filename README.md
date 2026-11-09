@@ -45,7 +45,7 @@ python3 -m venv .venv-render
 .venv-render/bin/python -B scripts/build_pdf.py
 ```
 
-Figure generation itself is standard-library only. PDF rendering is optional and separate from statistical verification; it uses ReportLab and svglib. See [publishing build notes](docs/publishing_build.md).
+Figure generation itself is standard-library only. PDF rendering is optional and separate from statistical verification; it uses ReportLab, svglib and DejaVu fonts for embedded cross-platform typography. See [publishing build notes](docs/publishing_build.md).
 
 ## Release and rights
 

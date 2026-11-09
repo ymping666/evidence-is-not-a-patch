@@ -18,7 +18,7 @@ The public data contain derived factual observations: anonymized labels/counts, 
 
 Budget-Fit V5, model weights and tokenizer files, official/private scorer code, compatibility overlays, task dependencies, complete snapshots, reference repairs, API payloads and the earlier private reviewer ZIP are excluded. Public bibliographic citations and package version names are attribution, not a copy of those packages or papers. Readers need their own lawful access and applicable licenses to obtain them elsewhere.
 
-New SVG figures are programmatically authored diagrams made from released numerical facts and generic vector/text primitives; no third-party raster image or font file is supplied. PDF rendering dependencies and any font embedding are checked by the release-level publishing audit; this Abjad review does not assume a font license merely from its installation on a machine.
+New SVG figures are programmatically authored diagrams made from released numerical facts and generic vector/text primitives; no third-party raster images or font bytes are embedded in the SVGs. The PDF contains a subset of the DejaVu fonts (derived from Bitstream Vera) to prevent platform-specific glyph spacing and font substitution errors. Their permissive license and attribution are preserved in [`../LICENSES/dejavu-fonts.txt`](../LICENSES/dejavu-fonts.txt). No standalone TTF files or PDF-rendering library binaries are checked into the repository.
 
 ## Verification performed
 
