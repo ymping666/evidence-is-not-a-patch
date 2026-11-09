@@ -11,7 +11,7 @@ This is a deliberately selected public release, built in a new repository. It is
 - [Figure 2: mechanical delivery subsets](paper/figures/figure2_delivery_subsets.svg)
 - [Figure 3: Abjad diagnosis and code ablations](paper/figures/figure3_abjad_ablation.svg)
 
-All three SVGs retain editable text and vector shapes. Table 3 includes both the unit-weighted three-state matrix and the separately event-weighted post-last-change stratum. The public edition adapts layout and artifact-availability text from the frozen latest manuscript; numerical results are unchanged. See [publication provenance](docs/publication_provenance.md).
+All three SVGs retain editable text and vector shapes. Table 3 includes both the unit-weighted three-state matrix and the separately event-weighted post-last-change stratum. The public edition clarifies the audit argument and references, improves layout, and updates artifact-availability text; numerical results are unchanged. See [publication provenance](docs/publication_provenance.md) and [paper-track submission audit](docs/submission_audit.md).
 
 ## Recompute the statistics
 

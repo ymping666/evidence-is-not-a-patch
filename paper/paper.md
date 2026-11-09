@@ -1,16 +1,16 @@
 # From Local Improvement to Verified Repair: A Cross-Intervention Delivery Audit
 
-**Subtitle:** Execution-grounded auditing and an exploratory preregistered prompt-only intervention
+**Subtitle:** Source-bound evidence, three-state check replay, and an exploratory prompt-only test
 
 ## Abstract
 
-Intermediate agent improvements need not become verified repairs. Across four historical intervention panels, selective edit supervision lowers validation negative log-likelihood by 31.5% while recorded repairs change from 12/24 to 11/24; feedback confirmation, attempted independent checking, and native-history exclusion provide no additional repairs. We audit 180 episodes, 2,451 tool events, and 21 tasks. Fixed-check execution on original, final-candidate, and reference source yields 314 qualified triples. Among failing candidates with zero-exit checks, all three states return zero in 16/16, 14/19, 16/21, and 36/36 units across panels: exit-status non-discrimination, not necessarily uninformative output. A locally preregistered prompt-only intervention adds 72 contemporary runs; SEAL achieves 6/24 repairs against baseline 5/24, with one successful flip and no demonstrated final-verification mechanism. Source-state replay and targeted cases distinguish execution, evidence interpretation, and artifact commitment. The contribution is a verifiable cross-intervention audit and a weak prospective test, not an established repair algorithm.
+A check evaluates one source state; a coding agent is judged on the patch it eventually returns. We operationalize this evidence-to-artifact gap across four historical interventions: 180 episodes, 2,451 tool events, and 21 distinct tasks. Of 549 recorded checks, 213 inspect production source differing from the final artifact. Holding checks and fixtures fixed, we replay 314 qualified original/candidate/reference triples (942 executions). Among failing candidates with zero-exit checks, all three source states also exit zero in 16/16, 14/19, 16/21, and 36/36 units across panels. This is **exit-status non-discrimination**, not proof that output carries no information. Meanwhile, selective edit supervision improves validation loss by 31.5% but changes recorded repairs from 12/24 to 11/24. A separate 72-run, locally prespecified prompt-only test yields 6/24 repairs against baseline 5/24, with no stable gain. We provide source-bound measurements, three-state discrimination tests, and provenance-separated patch ablations that make local evidence and final delivery auditable.
 
 ## 1. Introduction
 
-Agent optimization often targets an intermediate quantity: demonstration likelihood, feedback use, test generation, or context cost. Repository repair, however, is judged on the delivered patch. A plausible operation must execute; a check must interrogate the relevant behavior; and the retained artifact must preserve the useful change. Better performance at one link need not improve the entire process.
+Agent optimization often targets intermediate quantities: demonstration likelihood, feedback use, generated checks, or context cost. Yet repository repair is scored on the delivered artifact. A test may evaluate an earlier source state, fail to distinguish wrong from correct code, or assess an edit that never reaches the returned patch. These are different failures of the evidence-to-artifact link.
 
-Historical intervention outcomes motivate execution-grounded auditing; that audit then motivates a prospective prompt-only test. Neither retrospective reconstruction nor one successful flip isolates a prompt's causal mechanism. We combine paired interventions, mechanically reconstructed delivery events, three-state check discrimination, and bounded counterfactuals. We do not claim to discover ineffective self-tests, budget exhaustion, or patch regression first.
+We ask three questions: **Which source did a check inspect? Would the same check distinguish source states? Did a useful edit survive artifact handoff?** Our answer is an executable audit recipe: pair intervention outcomes with reconstructed source events, bind evidence to source hashes, replay fixed checks on three states, and examine bounded delivery counterexamples. A separate prompt-only test probes whether prompting can improve this chain; its results do not identify a causal mechanism.
 
 ![Repair realization links](figures/figure1_repair_chain.svg)
 
@@ -26,7 +26,7 @@ The scaffold is Henao's Budget-Fit Single Agent V5 [1], deploying Gemma-4-31B QA
 | P6.2: feedback prompt | Exploration BASE 12/16; FB 13/16 | Frozen confirmation: 13/24 each |
 | P8: candidate checking | 32 independent-check outputs; zero passed the format gate or executed | R/G/D: 4/16, 4/16, 3/16 |
 | P12: native-history exclusion / smaller thinking budget | Input tokens −35.9% / −27.4% | BASE/NH4096/NH1024: 7/12, 7/12, 6/12 |
-| P120: preregistered prompt-only SEAL | Contract/evidence/closure instructions; no weight update | A 5/24; B 5 PASS + 1 UNKNOWN; C 6/24 |
+| P120: locally prespecified prompt-only SEAL | Contract/evidence/closure instructions; no weight update | A 5/24; B 5 PASS + 1 UNKNOWN; C 6/24 |
 
 **Table 1. Local objectives and repairs.** Counts retain scheduled attempts, including P5's twelve UNKNOWN scores. P8 measures supplied-candidate preservation. NLL validation and feedback exploration are outside the 180-episode corpus. P120's 72 runs are separate; its original and adjudicated results appear in Section 6.
 
@@ -40,11 +40,13 @@ The scaffold is Henao's Budget-Fit Single Agent V5 [1], deploying Gemma-4-31B QA
 
 ## 3. From interventions to a mechanical delivery audit
 
-E1 fixes P5/P6.2/P8/P12 at 48/48/48/36 episodes over 12/12/8/12 tasks respectively, totaling 21 distinct task identities. Repeats and panels share tasks. We report panels separately, without pooling them as independent episodes or attaching independence-based confidence intervals.
+The event-level audit (E1) fixes P5/P6.2/P8/P12 at 48/48/48/36 episodes over 12/12/8/12 tasks, respectively: 21 distinct identities, with overlap and repeats. We report panels separately, without treating them as independent tasks or attaching independence-based confidence intervals.
 
-Actual source changes are reconstructed from diffs and tool feedback, including `write_file` and source-modifying `run_command`, not just `edit_file`. All 180 reconstructed final production-source states match archived delivery. This establishes source-state consistency under documented reconstruction assumptions, not exact runtime recovery. Semantic intent and Issue relevance do not determine the primary counts.
+We reconstruct production-source changes from diffs and tool feedback, including `write_file` and source-modifying `run_command`, not just `edit_file`. For every check, the audit binds its execution order, source hash, check/fixture identity, and outcome to a separately reconstructed final-source hash. All 180 final production-source states match archived delivery. This validates source-state reconstruction under documented assumptions, not historical loaded-module identity.
 
-Our strict local condition requires an executed check with exit code zero **after the last actual production-source modification**. An earlier zero exit cannot validate a subsequently changed version. Within-command ordering is inspected. The condition means that such a check exists, not that the final check necessarily returned zero. We call these zero-exit local checks, never verified successful tests.
+The first measurable break is **source drift**: 213/549 checks (38.8%) inspect source different from the final artifact; among 161 episodes with checks, fifteen last-check states differ. This is a temporal mismatch, not proof that the old evidence was useless.
+
+Our strict local condition requires an executed check exiting zero **after the last actual production-source change**; within-command ordering matters. This asserts that a qualifying zero-exit event exists, not that the last check passed or the issue was fixed. An earlier zero exit cannot validate a later version.
 
 | Panel | Actual new source change | Independent PASS / FAIL / UNKNOWN | FAIL among changed episodes | FAIL after last-change zero-exit |
 | --- | --- | --- | --- | --- |
@@ -61,7 +63,7 @@ Our strict local condition requires an executed check with exit code zero **afte
 
 ## 4. Three-state discrimination and temporal alignment
 
-E4 asks whether an unchanged agent-written check discriminates **original buggy code, the actual final agent candidate, and reference repair**. Check body, command, auxiliary fixtures, and qualified environment are fixed across columns. Identity includes their hashes and the complete candidate patch. Production-source hashes before fixtures, after fixtures, and after checking prevent silently changing the candidate. Invalid application, missing inputs, or environment failures are UNKNOWN.
+The three-state audit (E4) asks whether an unchanged agent-written check distinguishes **original buggy code, the final agent candidate, and reference repair**. Command, check body, auxiliary fixtures, and qualified environment remain fixed; only the source changes. Identities include hashes and the complete candidate patch. Source hashes before fixtures, after fixtures, and after checking guard against accidental candidate mutation. Invalid application, missing inputs, and environment failures are UNKNOWN.
 
 Eligibility is frozen before replay outcomes: 318 candidate-conditioned units yield 314 eligible triples, covering 408 historical events/130 episodes; four have incomplete or inconsistent fixtures. All 942 canonical executions qualify. Selection favors safely recoverable checks and is not representative of all checks.
 
@@ -74,29 +76,29 @@ Eligibility is frozen before replay outcomes: 318 candidate-conditioned units yi
 
 **Table 3. Candidate-conditioned exit-status discrimination.** Units deduplicate check/fixture/candidate/environment identities within panel. The all-three-zero column conditions further on candidate exit=0: 36/36 in P12 means all thirty-six zero-exit checks also return zero on original and reference, not thirty-six additional episodes. Reference nonzero outcomes do not remove candidates from the first denominator. Repeated tasks and checks remain dependent.
 
-The three-way matrix sharpens the finding: in many failing-candidate units, process status does not distinguish any of the three source states. This does **not** mean the checks provide no information. Caught exceptions or printed failure messages may expose real differences without propagating a nonzero exit. Nor is every candidate zero exit an erroneous test: it can check a correctly implemented sub-behavior while another issue requirement fails. Conversely, four P12 units return zero on original and reference but nonzero on the actual candidate, demonstrating why the candidate column matters.
+The matrix reveals **candidate-conditioned status blindness**: many failing-candidate checks also exit zero on both original and reference source. Printed errors or caught exceptions may still expose differences. A zero exit can also correctly validate one sub-behavior while another requirement fails. Conversely, four P12 units exit zero on original/reference but nonzero on the candidate; omitting the candidate would miss this distinction.
 
 Table 3's last column separately restricts to the check's **historical position after the last source change**, with event rather than unit weighting. These are new-environment reexecutions, not original model-visible feedback. Small denominators, especially P8, limit comparison. P8 often preserves a supplied candidate without new source editing. Neither subset estimates historical agent misjudgment rates.
 
-Event-weighted full-subset counts are 23/27, 26/36, 24/33, and 43/53; excluding fixture/scratch-byte conflicts gives 23/27, 26/34, 22/29, and 38/44. This is not complete historical-workspace recovery. New-environment independent labels change only P5 to 20/24 units; original UNKNOWN scores remain.
+Event-weighted and fixture-excluded sensitivity counts are released in the statistical supplement; they do not imply complete historical-workspace recovery. New-environment independent labels change only P5 to 20/24 units; original UNKNOWN scores remain.
 
-A separate historical alignment joins 549 checks to reconstructed production-source hashes: 213 differ from final source. Among 161 episodes with checks, fifteen last-check states differ from final source. Print-only checks, caught exceptions with zero exit, partial requirement coverage, and useful checks of old source are separate axes, not interchangeable failures. These conditional workspace identities do not establish historical loaded-module identity; old evidence is not automatically useless.
+These measurements separate source drift from exit-status non-discrimination. Neither alone establishes that a check is behaviorally irrelevant, and the qualified replay subset must not be extrapolated to all historical checks.
 
 ## 5. Bounded source-state and commitment cases
 
-E2 scores reconstructed states on twenty qualified tasks: 166 new final scores agree in all 154 cases with valid comparable original scores; fourteen Selfies episodes remain unqualified. Of 153 intermediate-state attempts, 149 score validly. One P5 Billiard episode creates a passing intermediate patch and subsequently loses it. One P8 OpenAPI episode instead loses an initially supplied passing patch through a diagnostic revert. These are distinct existence cases, not evidence that regression explains most failures. Three captured self-checks from these two tasks return zero on both passing and failing states, though printed output can differ.
+The source-state case audit (E2) scores twenty qualified tasks: 166 new final scores agree in all 154 cases with comparable valid original labels, while fourteen Selfies episodes remain unqualified; 149/153 intermediate attempts score validly. P5 Billiard creates and later loses a passing intermediate patch. P8 OpenAPI instead reverts an initially supplied correct patch. Three captured self-checks from these cases exit zero on both passing and failing states, although printed output may differ. These are **existence cases**, not failure-rate estimates.
 
-E3 replays two explicit budget-denied source edits unchanged. The official replacement helper rejects P6.2 Pyflakes because `old_string` is absent. P12 Pyflakes yields a workspace patch passing 25/25 tests. However, its chronology is read at step 30, successful `submit_patch` at step 31, then denied edit at step 32, approximately 34.21 seconds after submission. The submitted 238-byte patch contains only a reproduction script. The restored official runner returns an existing submitted snapshot, not automatically the later workspace; historical loaded-code identity is not retained. A denied edit would have produced a test-passing workspace patch, but successful final delivery was not demonstrated. Neither resubmission nor end-to-end counterfactual delivery was executed. One additional edit allowance is therefore not a demonstrated rescue.
+The budget-denied-edit replay (E3) distinguishes **workspace repair from submission**. P6.2 Pyflakes rejects an edit because `old_string` is absent. In P12 Pyflakes, a denied edit would yield a 25/25 test-passing workspace patch, but it occurs at step 32, 34.21 seconds *after* `submit_patch` at step 31. The submitted 238-byte patch contains only a reproduction script. The official runner returns that existing snapshot; no resubmission or end-to-end counterfactual delivery was executed. Thus extra edit allowance is not a demonstrated rescue.
 
 ## 6. Prospective exploratory SEAL intervention
 
-SEAL (Specification-grounded Evidence and Artifact Locking) is prompt-only: A is exact BF_V5; B adds Stop & Seal budget/closure guidance; C adds Issue-grounded contract and final-source evidence instructions to B. Only `system.md` differs; weights, tools, and scaffold are unchanged. Task identities, prompts, seed 20261018, contrasts, and UNKNOWN handling were locally preregistered in a hash-pinned lock before main execution, not registered publicly. Six exposed engineering smokes are excluded; prompts were not selected using their scores.
+SEAL (Specification-grounded Evidence and Artifact Locking) changes only `system.md`: A is exact BF_V5; B adds Stop & Seal budget/closure guidance; C additionally requests an issue-grounded contract and final-source evidence. Weights, tools, and scaffold are fixed. Tasks, prompts, seed 20261018, contrasts, and UNKNOWN handling were hash-locked locally *before* main runs, not publicly preregistered. Six exposed engineering smokes were excluded; their scores did not select prompts.
 
-Twenty-four tasks from 24 repositories receive one A/B/C run each: **72 actual contemporary generations**, without historical baseline reuse. A task's arms share the physical GPU/profile; six arm-order permutations occur four times each. Limits are 480 seconds, 28 charged tools, 80 turns, 8,192 output tokens and 4,096 thinking tokens; temperature/top-p are 0.2/0.95. The panel has 22 reused DEV tasks and two TRAIN-origin candidates without project-model exposure found in a bounded scan, not 24 fresh heldout tasks.
+Twenty-four repositories receive one A/B/C run each: **72 contemporary generations**, no reused historical outputs. Arms share the GPU/profile; six arm orders repeat four times. Limits are 480 seconds, 28 charged tools, 80 turns, 8,192 output and 4,096 thinking tokens, with temperature/top-p 0.2/0.95. These are 22 reused DEV tasks and two TRAIN-origin candidates with no exposure found in a bounded scan, **not** 24 fresh heldout tasks.
 
-Original outcomes are A: 5 PASS/19 FAIL; B: 5 PASS/18 FAIL/1 UNKNOWN; C: 6 PASS/18 FAIL. C−A has one win, no losses; its unadjusted exact discordant diagnostic is p=1.0. Original C−B registered net bounds are 0–1 repair. All arms fail both project-unexposed candidates; the sole flip, Abjad, is reused DEV. These results establish no stable gain.
+Original outcomes are A: 5 PASS/19 FAIL; B: 5 PASS/18 FAIL/1 UNKNOWN; C: 6 PASS/18 FAIL. C versus A has one win, no losses (unadjusted exact discordant p=1.0); C versus B has prespecified net bounds of 0-1 repair. All arms fail both project-unexposed candidates. The sole flip, Abjad, is reused DEV; there is no stable gain.
 
-B's Marshmallow collection error remains UNKNOWN in the primary record. Separate CPU diagnosis attributes it to a candidate-added call passing `cls` twice to a bound metaclass method. Original-source and override-removal controls remove that exception; the latter is not a repair. A separate assistant adjudication classifies the candidate FAIL: A/B/C then have 5/5/6 repairs, still 71 strict-valid raw scores plus one source-attributed failure, not 72 valid scoring receipts.
+B's Marshmallow collection error remains UNKNOWN in the primary record. Later CPU controls attribute it to a candidate-added double-`cls` call; removing that exception is not a repair. Separate assistant adjudication labels B FAIL, yielding A/B/C totals of 5/5/6, but still only **71 valid original scores**, not 72.
 
 In Abjad, C executes a repository example for the second reported behavior, interprets its output, then changes a constructor default and replaces mutation-during-iteration with filtering. A/B also discuss that behavior, but A implements only filtering and B retains debugging. A/B fail two default-value assertions; C passes eight tests. Post-hoc CPU ablations use the unchanged frozen scorer: default-only passes 8/8; filtering-only passes 6/8 and fails the same two constructor-default assertions. The default change alone reproduces C's test success. This isolates code contributions under existing tests, not prompt causality.
 
@@ -116,23 +118,23 @@ Trajectory research already studies successful versus failed strategies [7], tem
 
 ## 8. Limitations, artifacts, and conclusion
 
-The panels are small, development-directed, reused, heterogeneous, and not an independent generalization study. They establish no equivalence, hidden-score gain, or general inefficacy of fine-tuning or verification. No cross-hardware timing is pooled. Counterfactual replay depends on reconstructed inputs and qualified new environments; task dependence and eligibility selection limit extrapolation. Fixed scripts and auxiliary files do not control probe-internal randomness, such as generated random bytes.
+The historical panels share development tasks and differ in protocol; they do not establish cross-task generalization or the ineffectiveness of fine-tuning and verification. Replay relies on reconstructed source and qualified environments, with eligibility bias and possible probe-internal randomness. No cross-hardware timing or independence-based significance is claimed.
 
-Semantic labels are secondary: 148 targeted assistant-inspected units include 78 intent packets, 61 checks, and nine probes. Check judgments are 43 limited-relevance, eight non-covering, ten uncertain. Asgineer extremes do not establish 90% boundary coverage. Four core historical cases receive additional claim-level assistant confirmation; P120's Abjad and Marshmallow reviews remain targeted, not semantic review of all 72 runs. Human confirmations remain zero; no assistant review is called human certification.
+Semantic inspection was targeted: 148 assistant-inspected units, including 61 checks; four core historical cases received additional claim-level review. This is not exhaustive annotation, and there were **zero human confirmations**. Detailed labels and supplementary counts are documented in the public artifact.
 
 The [public artifact](https://github.com/ymping666/evidence-is-not-a-patch) provides anonymized statistics, source hashes, Abjad patches, and CPU verification scripts. It excludes private tests, the task scorer, full snapshots, and raw trajectories. Statistical recomputation is not new agent execution; reproducing private test outcomes still requires unavailable scoring assets.
 
-The main contribution is identifying auditable breaks between local objectives and verified repair. SEAL is an exploratory intervention; lower loss, zero-exit checks, or a passing uncommitted workspace alone do not establish improved complete-task delivery.
+The result is a **source-bound audit protocol** that exposes separate breaks in source continuity, check discrimination, and artifact delivery. It turns an intuitive last-mile concern into inspectable measurements and concrete counterexamples. SEAL remains exploratory; future controlled studies must test whether repairing these breaks improves independent issue resolution.
 
 ## References
 
-1. Henao. [*Gemma 4 Agent: Budget-Fit Single Agent, Version 5*](https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852). 2026.
-2. Jimenez et al. [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://arxiv.org/abs/2310.06770). 2023.
-3. Pan et al. [*Training Software Engineering Agents and Verifiers with SWE-Gym*](https://proceedings.mlr.press/v267/pan25g.html). ICML, 2025.
-4. Zheng et al. [*SWE-Prime: Fewer Trajectories, Better Performance*](https://arxiv.org/abs/2608.27449v1). 2026.
-5. Ding and Zhang. [*SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents*](https://arxiv.org/abs/2601.22129v1). 2026.
-6. Tao et al. [*ExecCritic: Learn to Test, Test to Improve for Coding Agents*](https://arxiv.org/abs/2609.09133v1). 2026.
-7. Majgaonkar et al. [*Understanding Code Agent Behaviour: An Empirical Study of Success and Failure Trajectories*](https://arxiv.org/abs/2511.00197v1). 2025.
-8. Zhao et al. [*Failure as a Process: An Anatomy of CLI Coding Agent Trajectories*](https://arxiv.org/abs/2607.09510v1). 2026.
-9. Mehta. [*Confident and Wrong: Silent Semantic Failures in Coding Agents*](https://arxiv.org/abs/2603.25764v3). 2026.
-10. Cao et al. [*Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution*](https://arxiv.org/abs/2610.32285v1). 2026.
+1. Henao, W. E. (2026). [*Gemma 4 Agent: Budget-Fit Single Agent*](https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852) (Version 5). Kaggle Notebook.
+2. Jimenez, C. E., et al. (2024). [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html). ICLR.
+3. Pan, J., et al. (2025). [*Training Software Engineering Agents and Verifiers with SWE-Gym*](https://proceedings.mlr.press/v267/pan25g.html). ICML, PMLR 267:47717-47737.
+4. Zheng, D., et al. (2026). [*SWE-Prime: Fewer Trajectories, Better Performance*](https://arxiv.org/abs/2608.27449v1). arXiv:2608.27449.
+5. Ding, Y. and Zhang, L. (2026). [*SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents*](https://arxiv.org/abs/2601.22129v1). arXiv:2601.22129.
+6. Tao, L., et al. (2026). [*ExecCritic: Learn to Test, Test to Improve for Coding Agents*](https://arxiv.org/abs/2609.09133v1). arXiv:2609.09133.
+7. Majgaonkar, O., et al. (2025). [*Understanding Code Agent Behaviour: An Empirical Study of Success and Failure Trajectories*](https://arxiv.org/abs/2511.00197v1). arXiv:2511.00197.
+8. Zhao, X., et al. (2026). [*Failure as a Process: An Anatomy of CLI Coding Agent Trajectories*](https://arxiv.org/abs/2607.09510v1). arXiv:2607.09510.
+9. Mehta, A. (2026). [*Confident and Wrong: Silent Semantic Failures in Coding Agents*](https://arxiv.org/abs/2603.25764v3). arXiv:2603.25764.
+10. Cao, Z., et al. (2026). [*Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution*](https://arxiv.org/abs/2610.32285v1). arXiv:2610.32285.

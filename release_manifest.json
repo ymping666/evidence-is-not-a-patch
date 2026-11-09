@@ -2,7 +2,7 @@
   "schema": "SELECTED_PUBLIC_RESEARCH_RELEASE_MANIFEST_V1",
   "release_version": "2026-11-09",
   "repository": "ymping666/evidence-is-not-a-patch",
-  "file_count_excluding_manifest": 37,
+  "file_count_excluding_manifest": 38,
   "manifest_is_separate_control_file": true,
   "private_git_history_imported": false,
   "frozen_parent_manuscript_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4747,
-      "sha256": "002eab820c7265472f074daa622c0536ab63dc248f3b41f04b480c7df7440fc6",
+      "bytes": 4830,
+      "sha256": "894536070555d297666d199eafc49bb7933f38cb28dac68b9019d567df014c24",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
@@ -184,8 +184,8 @@
     },
     {
       "path": "docs/publication_provenance.md",
-      "bytes": 2623,
-      "sha256": "a6c239895a2da8a8d977d810879ed2043b48918817569fd7394db6d42e8ffdc2",
+      "bytes": 3400,
+      "sha256": "cd1d447a2dbcbd2fb98b451b0f058e17fe5f60693873f556f5ebfa35cbb9c6b5",
       "category": "research_documentation_or_configuration",
       "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
       "public_release_authorized": true
@@ -215,6 +215,14 @@
       "public_release_authorized": true
     },
     {
+      "path": "docs/submission_audit.md",
+      "bytes": 4312,
+      "sha256": "3d7b305f4dd718b9d88de733d13049f10b1569830b16e94764f2d94df122552c",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized submission audit documentation; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
       "path": "docs/third_party_licenses.md",
       "bytes": 3454,
       "sha256": "844ece2ff791b1d8432488eba7c4aa32ceeea764b5f37b3a40a3bd07dbe3e2d6",
@@ -224,8 +232,8 @@
     },
     {
       "path": "paper/build_receipt.json",
-      "bytes": 1724,
-      "sha256": "163ffc5b53e607e855b60bfa4ed9951d5580f7b4a83cab611e0b6a8797faddac",
+      "bytes": 2000,
+      "sha256": "dacbb07deeb99aa1ed7d3e47a914bb3d0796b8f70406e6bc9ba02578fd9ec581",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -256,24 +264,24 @@
     },
     {
       "path": "paper/paper.md",
-      "bytes": 20933,
-      "sha256": "c22dfa4c3bb82eea7630a5670358723e5f27efa690d0885ce57250421fb57e15",
+      "bytes": 20060,
+      "sha256": "31848e5fbc043fee9727599fda3c0c990322683249c50371827c43631e935a17",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 143639,
-      "sha256": "0ad33d61055f1dfcc8166fed050c467f3ba9666a63a689ca800d358b1285fa70",
+      "bytes": 143520,
+      "sha256": "004ec5305090110f95e6f85f797eb83426904339c811f06313cd3e8b7810e48c",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/references.bib",
-      "bytes": 4978,
-      "sha256": "c84065d504d08502cdcfd0d42440673f42f127c6a2ee9472bb31dd44e99ee93f",
+      "bytes": 5160,
+      "sha256": "790f773ac4606bb9c5905c9ef968882a82d9e90632dd0efb6d2a6ab66f78866b",
       "category": "bibliographic_metadata",
       "rights_basis": "Citation metadata and attribution only; no cited paper body redistributed",
       "public_release_authorized": true
