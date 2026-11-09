@@ -1,0 +1,314 @@
+{
+  "schema": "SELECTED_PUBLIC_RESEARCH_RELEASE_MANIFEST_V1",
+  "release_version": "2026-11-09",
+  "repository": "ymping666/evidence-is-not-a-patch",
+  "file_count_excluding_manifest": 36,
+  "manifest_is_separate_control_file": true,
+  "private_git_history_imported": false,
+  "frozen_parent_manuscript_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
+  "publication_time_agent_generations": 0,
+  "publication_time_scoring_executions": 0,
+  "review_type": "assistant-assisted field/source, statistical, sensitivity and third-party notice inspection; not human trajectory annotation",
+  "excluded": [
+    "private tests and fixtures",
+    "task scorers and compatibility overlays",
+    "reference/gold repairs",
+    "full task snapshots",
+    "model weights or environment binaries",
+    "prompt bundles",
+    "raw trajectories and API archives",
+    "old reviewer archives",
+    "credentials and machine endpoints",
+    "private Git commits, branches and objects"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 80,
+      "sha256": "35d57a0c9d920279af73163bfef915049fe8887d999fe496c4057d67ca9b990a",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "LICENSES/abjad-ext-nauert.txt",
+      "bytes": 1067,
+      "sha256": "df7843f64191a5372004bafa37f97eb9f457ba0c367e8111c77c368eb96afc3c",
+      "category": "third_party_license_notice",
+      "rights_basis": "Exact upstream MIT copyright, permission and disclaimer notice",
+      "public_release_authorized": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 4694,
+      "sha256": "f7aa199a9ed79be1b975ead9765c7796990c0a93718896f65c937fc9a99d5a76",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "RIGHTS.md",
+      "bytes": 1460,
+      "sha256": "d13bb435d01fe210ce7ae994b04e3929bbfdc4bc326487a8daf02a6da97d297a",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/README.md",
+      "bytes": 4580,
+      "sha256": "ef1fc9d93ab755e07430ea2fa7b587f52e9000d3b32e332c3a121b3e3fa1bf26",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/environment.json",
+      "bytes": 4418,
+      "sha256": "df9378e6bb933d9c3d63da272dba86bb48f44d2491e2b5cbc4bfd63546e43ec8",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/patches/DEFAULT_ONLY.patch",
+      "bytes": 535,
+      "sha256": "2c3762a23fde017a8198161e5a1ebb7fdf168c3ea631b1f003669d5333aaabe1",
+      "category": "minimal_licensed_production_patch",
+      "rights_basis": "Upstream MIT context with exact notice; user-authorized research patch publication",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/patches/FILTER_ONLY.patch",
+      "bytes": 695,
+      "sha256": "2efbab45b6b22b8242a6d5173e0286307707c58700ec749c321caa47a7cad4a8",
+      "category": "minimal_licensed_production_patch",
+      "rights_basis": "Upstream MIT context with exact notice; user-authorized research patch publication",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/patches/FULL_C.patch",
+      "bytes": 1041,
+      "sha256": "b3914544e5687233b632eccd8697e7de89d074532bbff9311fad92f7e07ebc62",
+      "category": "minimal_licensed_production_patch",
+      "rights_basis": "Upstream MIT context with exact notice; user-authorized research patch publication",
+      "public_release_authorized": true
+    },
+    {
+      "path": "abjad/source_provenance.json",
+      "bytes": 3897,
+      "sha256": "687e2bd6fd3dee0ba2e288e6dde2d7d2bf92740a60cf1f578de7263f3b0a3f1d",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/abjad_results.json",
+      "bytes": 5182,
+      "sha256": "636acc65549d860f60c153350b7e815ff0ae9ec9b10d574d7136e8dd56e53aaa",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/historical.json",
+      "bytes": 492259,
+      "sha256": "28ce0b62af9acdb5133a5fa54b6dab7e871ee094bb394322072a343130df10e3",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/p120.json",
+      "bytes": 15151,
+      "sha256": "fdf7f6d22d1ec52f473db7306944b87ca1377ed58dba0b71c57f203fed78c650",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/p120_adjudication.json",
+      "bytes": 710,
+      "sha256": "9636712ba3b25e3324a096ab100753d90e46477cdbb7d42f5c52bf54213fc53f",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/provenance.json",
+      "bytes": 3265,
+      "sha256": "83b7fcf3169bff1c4be27c763ffe06fedb5a6f7bfb64a9530a35960d8512560d",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "data/supplementary_counts.json",
+      "bytes": 2996,
+      "sha256": "ce208aea20dd7798aaef4419592c88e0323c71a54580aff7efa46006a6f22e2c",
+      "category": "anonymized_numeric_projection",
+      "rights_basis": "User-authorized field-level factual research export; no underlying task/scorer license granted",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/data_dictionary.md",
+      "bytes": 10901,
+      "sha256": "c6f1b266bd5ca49516219497d5b4d07a55fcf1899057ab8deada0821b644ed53",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/environment.md",
+      "bytes": 3259,
+      "sha256": "42749dd2197e9274593d0a6e8ecb71154a6a9ee8f69ac2751a845a69f6cb6c04",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/protocol.md",
+      "bytes": 9662,
+      "sha256": "533f290f3252f8da2bf75a8341c285fdac0d40b847cb48e44410206b80c362ee",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/publication_provenance.md",
+      "bytes": 2339,
+      "sha256": "1b4d586cb4e575813dcc705818870d5044fc6b76f497e87c96bdfee4cc20b2ab",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/publishing_build.md",
+      "bytes": 2444,
+      "sha256": "51470dde2fddaa0cb9ae0f585786917f4426e3404e1b0758476f5971fa0f386b",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/release_checklist.md",
+      "bytes": 3007,
+      "sha256": "9f46af9a0f1d28dd6e6ae49a8fc6d41940bea49940b47f2dff90ddda31970d52",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/reproduction_boundaries.md",
+      "bytes": 4266,
+      "sha256": "5c044a19da202603f3eda073f2a263530e569d698eeb99a4cdd048e6ef95c7e5",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "docs/third_party_licenses.md",
+      "bytes": 3270,
+      "sha256": "15ce5ce60b2681df63f38c661c9e784d1940b955325f18726b4b8a6cb9262949",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/build_receipt.json",
+      "bytes": 1488,
+      "sha256": "fc704b2623d1131abb314651f6f1eef8499397f93db900d8e08ac35c1a18d5cc",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/figures/figure1_repair_chain.svg",
+      "bytes": 4116,
+      "sha256": "e37b830e6c3a11caad16b261ad5a39e095247f70c323584c0025690c37752620",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/figures/figure2_delivery_subsets.svg",
+      "bytes": 5310,
+      "sha256": "5ff778189e178d60ce2207b02693ca3cc3409810dda61045f6a8545507647e74",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/figures/figure3_abjad_ablation.svg",
+      "bytes": 5616,
+      "sha256": "96badbfda35f5caebe7b51b959bc78eba2575d86ce930b7dd2387f6e2994a794",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/paper.md",
+      "bytes": 20915,
+      "sha256": "877e9ed9c63ab2be6d47a87c2721dd84d746af0a2c27dc9bc86914d65705887e",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/paper.pdf",
+      "bytes": 26374,
+      "sha256": "d5585c4586e23cabf1d1314f9725cca4b1db453aec939c8221fd8b344a3c4453",
+      "category": "research_manuscript_or_authored_vector_figure",
+      "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "paper/references.bib",
+      "bytes": 4978,
+      "sha256": "c84065d504d08502cdcfd0d42440673f42f127c6a2ee9472bb31dd44e99ee93f",
+      "category": "bibliographic_metadata",
+      "rights_basis": "Citation metadata and attribution only; no cited paper body redistributed",
+      "public_release_authorized": true
+    },
+    {
+      "path": "requirements-render.txt",
+      "bytes": 127,
+      "sha256": "14b773bc2b30ccd8ce977612d536f1a8cea1a887c1e2ad73d00873796afb3920",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized release documentation; first-party rights scope in RIGHTS.md",
+      "public_release_authorized": true
+    },
+    {
+      "path": "scripts/build_pdf.py",
+      "bytes": 6720,
+      "sha256": "3dbe9300823b54ae7617993c4ca3fc5cca848bda3e8c1f35ede8baa69d44c2c6",
+      "category": "new_statistical_or_presentation_utility",
+      "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
+      "public_release_authorized": true
+    },
+    {
+      "path": "scripts/check_release.py",
+      "bytes": 4581,
+      "sha256": "e8ddbb62bc572bfaf34e26c6c2392524c50956cbdba94f7240a127dd7ad135c7",
+      "category": "new_statistical_or_presentation_utility",
+      "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
+      "public_release_authorized": true
+    },
+    {
+      "path": "scripts/render_figures.py",
+      "bytes": 6955,
+      "sha256": "f12485d8e42a2f4c08e1d0ce9eba30bc52f92954e643d574b926102b663b2b83",
+      "category": "new_statistical_or_presentation_utility",
+      "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
+      "public_release_authorized": true
+    },
+    {
+      "path": "scripts/verify_statistics.py",
+      "bytes": 11164,
+      "sha256": "20aa12c48d9ca010599640c91bf0e8282665686caa047181e7a3c3c0a26e3ea7",
+      "category": "new_statistical_or_presentation_utility",
+      "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
+      "public_release_authorized": true
+    }
+  ]
+}

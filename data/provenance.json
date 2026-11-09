@@ -1,0 +1,71 @@
+{
+  "schema": "PUBLIC_NUMERIC_PROVENANCE_V1",
+  "source_files": [
+    {
+      "source_id": "historical_frozen_portable_numeric_evidence",
+      "sha256": "d72383670968e6e7f2fbd176e429ce3277ea9392f6844b332fc85d5f006e1751",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "p120_original_final_primary",
+      "sha256": "4a9e03b5aec3a8a0c4c385dd0bebcc3e627fbedd24df8d5dc0af5ff8eeed9c2a",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "p120_frozen_task_subsets",
+      "sha256": "47b16b8221571c8209f74732c5c96de05562ec8db50fb7c0d581343da54c895f",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "p120_study_lock",
+      "sha256": "50c95eedcf4ee9ec64c3a986b1f37b3644e37d9f55ecc4a601a3074a8f862982",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "p120_separate_source_adjudication",
+      "sha256": "7b232fca40d031b09e2174d951ee717565172e7d303c5347ba6fd25c1e863f71",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "p120_source_adjudication_reasoning",
+      "sha256": "71c5321bc0ef39be8e2c2660b72e5e7fdd77a49de31b7155a18295109729946a",
+      "access": "not redistributed; hash identifies frozen numeric source"
+    },
+    {
+      "source_id": "historical_state_alignment_summary",
+      "sha256": "bd7828fdd54761499f1ac0364cdaba852a929a08abdf286bfbd39d2af472022f",
+      "access": "not redistributed; hash identifies frozen aggregate source"
+    },
+    {
+      "source_id": "historical_E2_replay_completion",
+      "sha256": "b8e8484522ddd0c7d444cc27f9f7ef9553c6c79f02af2aedc7fc2bc3d6d5310e",
+      "access": "not redistributed; hash identifies frozen aggregate source"
+    },
+    {
+      "source_id": "historical_E2_final_numeric_summary",
+      "sha256": "8bb87583d541f88aa3a2c6461318c10736b50c5ad363fd938120ac7ecac2783d",
+      "access": "not redistributed; hash identifies frozen aggregate source"
+    },
+    {
+      "source_id": "historical_E3_commitment_timing_summary",
+      "sha256": "d51c4c3ac43eeefa3ac58a028e462a4df886d61de594bd307f5861972d4d7be1",
+      "access": "not redistributed; hash identifies frozen aggregate source"
+    },
+    {
+      "source_id": "historical_targeted_assistant_inspection_summary",
+      "sha256": "e40392a5080ef9583117608ac5ee45461c794f6f68dbea4871cb5448d1c4de5c",
+      "access": "not redistributed; hash identifies frozen aggregate source"
+    }
+  ],
+  "export_files": {
+    "historical.json": "28ce0b62af9acdb5133a5fa54b6dab7e871ee094bb394322072a343130df10e3",
+    "p120.json": "fdf7f6d22d1ec52f473db7306944b87ca1377ed58dba0b71c57f203fed78c650",
+    "p120_adjudication.json": "9636712ba3b25e3324a096ab100753d90e46477cdbb7d42f5c52bf54213fc53f",
+    "abjad_results.json": "636acc65549d860f60c153350b7e815ff0ae9ec9b10d574d7136e8dd56e53aaa",
+    "supplementary_counts.json": "ce208aea20dd7798aaef4419592c88e0323c71a54580aff7efa46006a6f22e2c"
+  },
+  "scope": "Numerical projection only; source hashes do not provide public access to excluded sources.",
+  "new_agent_experiments": 0,
+  "new_GPU_calls": 0,
+  "new_scoring_calls": 0
+}

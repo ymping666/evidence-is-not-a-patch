@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="435" viewBox="0 0 1200 435" role="img" aria-labelledby="title desc">
+<title id="title">Abjad: diagnosis, edits, and CPU patch ablation</title><desc id="desc">Original agent C passed eight tests after two edits, with no post-edit check or explicit submission. Separate CPU code ablations: default-only eight pass; filter-only six pass and two fail. No prompt causal effect is established.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="#182b3a">Abjad: diagnosis, code changes, and limits</text>
+<text x="28" y="76" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" text-anchor="start" fill="#182b3a">Original C: actual tool order</text>
+<rect x="28" y="95" width="270" height="100" rx="6" fill="#f2f6f9" stroke="#cbdce9"/>
+<text x="40" y="123" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">10: diagnose</text>
+<text x="40" y="153" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">Real Quantizer output</text>
+<text x="40" y="177" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">shows second behavior</text>
+<line x1="302" y1="145" x2="312" y2="145" stroke="#526473" stroke-width="2"/><polygon points="320,145 311,140 311,150" fill="#526473"/>
+<rect x="322" y="95" width="270" height="100" rx="6" fill="#f2f6f9" stroke="#cbdce9"/>
+<text x="334" y="123" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">14: default</text>
+<text x="334" y="153" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">replace_rest flag</text>
+<text x="334" y="177" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">False to True</text>
+<line x1="596" y1="145" x2="606" y2="145" stroke="#526473" stroke-width="2"/><polygon points="614,145 605,140 605,150" fill="#526473"/>
+<rect x="616" y="95" width="270" height="100" rx="6" fill="#f2f6f9" stroke="#cbdce9"/>
+<text x="628" y="123" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">15: filtering</text>
+<text x="628" y="153" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">Replace remove loop</text>
+<text x="628" y="177" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">with list filtering</text>
+<line x1="890" y1="145" x2="900" y2="145" stroke="#526473" stroke-width="2"/><polygon points="908,145 899,140 899,150" fill="#526473"/>
+<rect x="910" y="95" width="270" height="100" rx="6" fill="#f2f6f9" stroke="#cbdce9"/>
+<text x="922" y="123" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">Then: context stop</text>
+<text x="922" y="153" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">No post-edit check</text>
+<text x="922" y="177" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#526473">No explicit submit</text>
+<text x="28" y="233" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">Recorded 8-test outcomes (distinct execution origins)</text>
+<text x="28" y="267" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">Full C patch</text>
+<text x="230" y="267" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Original agent artifact</text>
+<rect x="500" y="249" width="480" height="24" rx="0" fill="#25736d"/>
+<text x="1005" y="267" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#182b3a">8 PASS / 0 FAIL</text>
+<text x="28" y="313" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">Default-only</text>
+<text x="230" y="313" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Later CPU ablation</text>
+<rect x="500" y="295" width="480" height="24" rx="0" fill="#25736d"/>
+<text x="1005" y="313" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#182b3a">8 PASS / 0 FAIL</text>
+<text x="28" y="359" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#182b3a">Filter-only</text>
+<text x="230" y="359" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Later CPU ablation</text>
+<rect x="500" y="341" width="360" height="24" rx="0" fill="#25736d"/>
+<rect x="860" y="341" width="120" height="24" rx="0" fill="#a84343"/>
+<text x="1005" y="359" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="normal" text-anchor="start" fill="#182b3a">6 PASS / 2 FAIL</text>
+<text x="28" y="421" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Code ablation, not prompt causality.</text>
+</svg>

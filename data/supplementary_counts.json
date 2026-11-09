@@ -1,0 +1,94 @@
+{
+  "schema": "PUBLIC_SUPPLEMENTARY_AGGREGATE_COUNTS_V1",
+  "scope": "Whitelist frozen aggregate summaries only; no raw tests, cases, check bodies, scorer or new experiment.",
+  "state_alignment": {
+    "source_id": "historical_state_alignment_summary",
+    "panels": [
+      {
+        "panel": "P5",
+        "check_events": 127,
+        "episodes_with_checks": 39,
+        "check_source_differs_from_archived_final": 43,
+        "last_check_version_mismatch": [
+          1,
+          39
+        ]
+      },
+      {
+        "panel": "P6.2",
+        "check_events": 194,
+        "episodes_with_checks": 45,
+        "check_source_differs_from_archived_final": 88,
+        "last_check_version_mismatch": [
+          6,
+          45
+        ]
+      },
+      {
+        "panel": "P8",
+        "check_events": 91,
+        "episodes_with_checks": 41,
+        "check_source_differs_from_archived_final": 21,
+        "last_check_version_mismatch": [
+          7,
+          41
+        ]
+      },
+      {
+        "panel": "P12",
+        "check_events": 137,
+        "episodes_with_checks": 36,
+        "check_source_differs_from_archived_final": 61,
+        "last_check_version_mismatch": [
+          1,
+          36
+        ]
+      }
+    ],
+    "workspace_identity_is_conditional": true
+  },
+  "retained_aggregate_summaries": {
+    "E2": {
+      "source_ids": [
+        "historical_E2_replay_completion",
+        "historical_E2_final_numeric_summary"
+      ],
+      "qualified_tasks": 20,
+      "valid_final_scores": 166,
+      "valid_intermediate_scores": 149,
+      "intermediate_scoring_unknown": 4,
+      "true_generated_intermediate_PASS_to_actual_final_FAIL": 1,
+      "initial_candidate_t0_PASS_to_actual_final_FAIL": 1,
+      "historical_valid_final_agreements": 154,
+      "historical_valid_final_disagreements": 0,
+      "unqualified_episodes": 14,
+      "intermediate_state_attempts": 153
+    },
+    "E3": {
+      "source_id": "historical_E3_commitment_timing_summary",
+      "source_read_step": 30,
+      "successful_submit_step": 31,
+      "denied_source_edit_step": 32,
+      "submitted_artifact_bytes": 238,
+      "denied_edit_seconds_after_submit_return": 34.210551738739014,
+      "counterfactual_fixed_tests_passed": 25,
+      "counterfactual_resubmission_executed": false,
+      "counterfactual_final_delivery_executed": false
+    },
+    "semantic_review": {
+      "source_id": "historical_targeted_assistant_inspection_summary",
+      "review_units": 148,
+      "episode_intent_units": 78,
+      "post_last_source_zero_exit_check_units": 61,
+      "discriminator_probe_units": 9,
+      "check_relevance_labels": {
+        "limited_relevance": 43,
+        "non_covering": 8,
+        "uncertain": 10
+      },
+      "human_confirmed": 0,
+      "scope_is_targeted_not_representative": true
+    }
+  },
+  "recomputation_boundary": "State-alignment totals are summed from four panel aggregates. E2/E3/semantic counts are retained source summaries, not new raw-event or task-test executions."
+}

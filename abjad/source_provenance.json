@@ -1,0 +1,111 @@
+{
+  "schema": "PUBLIC_ABJAD_SOURCE_PROVENANCE_V1",
+  "upstream": {
+    "repository": "https://github.com/Abjad/abjad-ext-nauert",
+    "base_commit": "520f389f06e21ee0a094016b4f1e2b0cb58263c1",
+    "modified_source_path": "abjadext/nauert/gracehandlers.py",
+    "license": "MIT",
+    "license_path": "LICENSES/abjad-ext-nauert.txt",
+    "license_sha256": "df7843f64191a5372004bafa37f97eb9f457ba0c367e8111c77c368eb96afc3c"
+  },
+  "sources": {
+    "ablation_registration": {
+      "sha256": "35a657b67aaf230bfb03d96276d316e5099a3d2eb0e259241a49522d6947276a",
+      "bytes": 1928
+    },
+    "ablation_analysis": {
+      "sha256": "612e38586de0430ac47190a8166b81468493864ab16aa6ade6f38ae7a7b6ef41",
+      "bytes": 1719
+    },
+    "original_A_score": {
+      "sha256": "ba96b5eb2ae983b6a5a5ae693933401e06d181b54eb168241d6c1905fcdd3441",
+      "bytes": 4986
+    },
+    "original_A_output": {
+      "sha256": "4bc1a0884087cca026ffa8e31df3609589f45035e12ffb9831033c2296a9d927",
+      "bytes": 2602
+    },
+    "original_B_score": {
+      "sha256": "d58024b59aa419b4fd5bee4a722da03f5c3763eb6d01692de85860a2387a98b8",
+      "bytes": 4985
+    },
+    "original_B_output": {
+      "sha256": "9428a8d00a2050aafdcc9f3b32ab11547e96fae2bc56eea37ca7d4e360b72daa",
+      "bytes": 2602
+    },
+    "original_C_score": {
+      "sha256": "211f459182e5237c07af5eda8a35ba3d83a607ea2ccefd1474b8d974e09344a5",
+      "bytes": 4984
+    },
+    "original_C_output": {
+      "sha256": "39fe15dbec2ede3565a91a56bfaf221b7bfe586557f8908b1ace12fc9086ecb9",
+      "bytes": 367
+    },
+    "FULL_C_patch": {
+      "sha256": "b3914544e5687233b632eccd8697e7de89d074532bbff9311fad92f7e07ebc62",
+      "bytes": 1041
+    },
+    "DEFAULT_ONLY_patch": {
+      "sha256": "2c3762a23fde017a8198161e5a1ebb7fdf168c3ea631b1f003669d5333aaabe1",
+      "bytes": 535
+    },
+    "FILTER_ONLY_patch": {
+      "sha256": "2efbab45b6b22b8242a6d5173e0286307707c58700ec749c321caa47a7cad4a8",
+      "bytes": 695
+    },
+    "DEFAULT_ONLY_score": {
+      "sha256": "e37083d05dc050c6f5a3d0cef9ded0f4a92cddf91a5ca138ad8a8a123ea2c30a",
+      "bytes": 4923
+    },
+    "DEFAULT_ONLY_output": {
+      "sha256": "e483fd7e8c299fd759a6dda14226b206dc1864d77302242b80e252b5a3d689aa",
+      "bytes": 346
+    },
+    "FILTER_ONLY_score": {
+      "sha256": "6b89a94ea1a7f56c043639d4ab9335d7b7ecc6a18a04a243524e0a1e33dc82ba",
+      "bytes": 4923
+    },
+    "FILTER_ONLY_output": {
+      "sha256": "348dac577ab4ee9e6a5ea0a09f922e1c018d8a980a8c295311dce32e747a5221",
+      "bytes": 2580
+    },
+    "frozen_score_one_source": {
+      "sha256": "a6d434bd1ea26410c16e55fde1b474f511de1139f9d83caa2876fc44de3a8ab4",
+      "bytes": 7366
+    },
+    "frozen_scoring_env_source": {
+      "sha256": "ac895405742126ef6c103130499637880d3288ebc7527e79038a97f74fc7e5a9",
+      "bytes": 8484
+    },
+    "Abjad_targeted_review": {
+      "sha256": "5297962cddce2eaa18be000feb643291faa4857341183cf0f11504708d148f0a",
+      "bytes": 3906
+    }
+  },
+  "patches": {
+    "FULL_C": {
+      "path": "abjad/patches/FULL_C.patch",
+      "sha256": "b3914544e5687233b632eccd8697e7de89d074532bbff9311fad92f7e07ebc62",
+      "bytes": 1041
+    },
+    "DEFAULT_ONLY": {
+      "path": "abjad/patches/DEFAULT_ONLY.patch",
+      "sha256": "2c3762a23fde017a8198161e5a1ebb7fdf168c3ea631b1f003669d5333aaabe1",
+      "bytes": 535
+    },
+    "FILTER_ONLY": {
+      "path": "abjad/patches/FILTER_ONLY.patch",
+      "sha256": "2efbab45b6b22b8242a6d5173e0286307707c58700ec749c321caa47a7cad4a8",
+      "bytes": 695
+    }
+  },
+  "withheld": [
+    "private tests and grader source",
+    "complete task snapshot",
+    "raw grader logs and machine paths",
+    "raw model traces and API requests",
+    "original A/B scratch scripts",
+    "private repository history"
+  ],
+  "hash_interpretation": "Hashes identify frozen private source bytes. Withheld sources cannot be independently reexecuted or inspected from a digest alone."
+}

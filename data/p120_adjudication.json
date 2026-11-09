@@ -1,0 +1,20 @@
+{
+  "schema": "PUBLIC_P120_POSTHOC_SOURCE_ATTRIBUTION_V1",
+  "source_id": "p120_separate_source_adjudication",
+  "decisions": [
+    {
+      "cell_id": "M054",
+      "original_outcome": "UNKNOWN",
+      "adjudicated_outcome": "FAIL",
+      "reviewer_type": "assistant_targeted_review",
+      "human_signed": false,
+      "basis": "source-attributed candidate program fault in the frozen environment",
+      "reason": "Candidate passes cls explicitly to an already bound metaclass method.",
+      "new_score_receipt_created": false
+    }
+  ],
+  "original_strict_valid_scores": 71,
+  "additional_source_attributed_FAIL_decisions": 1,
+  "new_strict_valid_score_receipts": 0,
+  "original_primary_unchanged": true
+}

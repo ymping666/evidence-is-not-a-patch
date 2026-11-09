@@ -1,0 +1,24 @@
+diff --git a/abjadext/nauert/gracehandlers.py b/abjadext/nauert/gracehandlers.py
+index 8813e0f..e36756b 100644
+--- a/abjadext/nauert/gracehandlers.py
++++ b/abjadext/nauert/gracehandlers.py
+@@ -274,7 +274,7 @@ class ConcatenatingGraceHandler(GraceHandler):
+         self,
+         discard_grace_rest=True,
+         grace_duration=None,
+-        replace_rest_with_final_grace_note=False,
++        replace_rest_with_final_grace_note=True,
+     ):
+         self._discard_grace_rest = discard_grace_rest
+         if grace_duration is None:
+@@ -302,9 +302,7 @@ class ConcatenatingGraceHandler(GraceHandler):
+ 
+         grace_events_list = list(grace_events)
+         if self._discard_grace_rest:
+-            for q_event in grace_events_list:
+-                if isinstance(q_event, SilentQEvent):
+-                    grace_events_list.remove(q_event)
++            grace_events_list = [q_event for q_event in grace_events_list if not isinstance(q_event, SilentQEvent)]
+         grace_events = tuple(grace_events_list)
+ 
+         if grace_events:

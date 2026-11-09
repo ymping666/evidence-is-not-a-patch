@@ -1,0 +1,28 @@
+{
+  "schema": "PUBLIC_PAPER_BUILD_RECEIPT_V1",
+  "release_version": "2026-11-09",
+  "frozen_parent_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
+  "public_markdown_sha256": "877e9ed9c63ab2be6d47a87c2721dd84d746af0a2c27dc9bc86914d65705887e",
+  "public_PDF_sha256": "d5585c4586e23cabf1d1314f9725cca4b1db453aec939c8221fd8b344a3c4453",
+  "PDF_pages": 6,
+  "word_counts": {
+    "markdown_whitespace_including_tables_captions_references": 2816,
+    "markdown_lexical_including_tables_captions_references": 2883,
+    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2878,
+    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2989,
+    "cap": 3000,
+    "reference_or_footer_exemption_used": false
+  },
+  "presentation_changes": [
+    "Added conceptual Figure1; original mechanical figure becomes Figure2; added Abjad Figure3",
+    "Merged old Table4 temporal stratum into Table3; no numerical outcome changed",
+    "Replaced obsolete private-artifact availability paragraph with public-release scope"
+  ],
+  "new_agent_generations": 0,
+  "new_task_scoring_executions": 0,
+  "PDF_has_embedded_attachments": false,
+  "PDF_has_embedded_font_files": false,
+  "PDF_has_raster_images": false,
+  "fonts": "PDF standard Type1 Helvetica/Times/Courier; no font bytes redistributed",
+  "build_mode": "ReportLab invariant mode; fixed metadata timestamp is not an execution or preregistration date"
+}

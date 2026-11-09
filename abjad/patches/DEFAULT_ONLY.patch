@@ -1,0 +1,13 @@
+diff --git a/abjadext/nauert/gracehandlers.py b/abjadext/nauert/gracehandlers.py
+index 8813e0f..e36756b 100644
+--- a/abjadext/nauert/gracehandlers.py
++++ b/abjadext/nauert/gracehandlers.py
+@@ -274,7 +274,7 @@ class ConcatenatingGraceHandler(GraceHandler):
+         self,
+         discard_grace_rest=True,
+         grace_duration=None,
+-        replace_rest_with_final_grace_note=False,
++        replace_rest_with_final_grace_note=True,
+     ):
+         self._discard_grace_rest = discard_grace_rest
+         if grace_duration is None:

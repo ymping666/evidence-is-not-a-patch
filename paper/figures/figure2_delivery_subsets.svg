@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="455" viewBox="0 0 1200 455" role="img" aria-labelledby="title desc">
+<title id="title">Nested mechanical delivery subsets</title><desc id="desc">Counts recomputed from anonymized frozen events. Source change, a zero-exit check after the last production edit, and independent PASS inside that checked subset. These are dependent descriptive subsets.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="28" y="35" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="#182b3a">Mechanical delivery subsets</text>
+<rect x="28" y="58" width="16" height="16" rx="0" fill="#cbdce9"/>
+<text x="52" y="72" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#182b3a">Actual source change</text>
+<rect x="320" y="58" width="16" height="16" rx="0" fill="#396b8f"/>
+<text x="344" y="72" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#182b3a">Post-last-edit zero-exit check</text>
+<rect x="705" y="58" width="16" height="16" rx="0" fill="#25736d"/>
+<text x="729" y="72" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#182b3a">Independent PASS inside checked subset</text>
+<text x="28" y="135" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="#182b3a">P5</text>
+<text x="28" y="160" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" text-anchor="start" fill="#526473">n=48</text>
+<rect x="155" y="115" width="490.0" height="13" rx="0" fill="#cbdce9"/>
+<text x="655.0" y="127" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#182b3a">28</text>
+<rect x="155" y="132" width="437.5" height="13" rx="0" fill="#396b8f"/>
+<text x="602.5" y="144" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#396b8f">25</text>
+<rect x="155" y="149" width="367.5" height="13" rx="0" fill="#25736d"/>
+<text x="532.5" y="161" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#25736d">21</text>
+<text x="28" y="212" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="#182b3a">P6.2</text>
+<text x="28" y="237" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" text-anchor="start" fill="#526473">n=48</text>
+<rect x="155" y="192" width="805.0" height="13" rx="0" fill="#cbdce9"/>
+<text x="970.0" y="204" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#182b3a">46</text>
+<rect x="155" y="209" width="630.0" height="13" rx="0" fill="#396b8f"/>
+<text x="795.0" y="221" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#396b8f">36</text>
+<rect x="155" y="226" width="420.0" height="13" rx="0" fill="#25736d"/>
+<text x="585.0" y="238" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#25736d">24</text>
+<text x="28" y="289" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="#182b3a">P8</text>
+<text x="28" y="314" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" text-anchor="start" fill="#526473">n=48</text>
+<rect x="155" y="269" width="175.0" height="13" rx="0" fill="#cbdce9"/>
+<text x="340.0" y="281" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#182b3a">10</text>
+<rect x="155" y="286" width="35.0" height="13" rx="0" fill="#396b8f"/>
+<text x="200.0" y="298" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#396b8f">2</text>
+<rect x="155" y="303" width="17.5" height="13" rx="0" fill="#25736d"/>
+<text x="182.5" y="315" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#25736d">1</text>
+<text x="28" y="366" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="#182b3a">P12</text>
+<text x="28" y="391" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="normal" text-anchor="start" fill="#526473">n=36</text>
+<rect x="155" y="346" width="542.5" height="13" rx="0" fill="#cbdce9"/>
+<text x="707.5" y="358" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#182b3a">31</text>
+<rect x="155" y="363" width="525.0" height="13" rx="0" fill="#396b8f"/>
+<text x="690.0" y="375" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#396b8f">30</text>
+<rect x="155" y="380" width="350.0" height="13" rx="0" fill="#25736d"/>
+<text x="515.0" y="392" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#25736d">20</text>
+<text x="28" y="441" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="normal" text-anchor="start" fill="#526473">Descriptive subsets; shared tasks.</text>
+</svg>

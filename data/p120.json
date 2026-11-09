@@ -1,0 +1,652 @@
+{
+  "schema": "PUBLIC_MINIMAL_P120_ORIGINAL_OUTCOMES_V1",
+  "source_id": "p120_original_final_primary",
+  "cells": [
+    {
+      "cell_id": "M001",
+      "task_id": "T017",
+      "repository_id": "R008",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M002",
+      "task_id": "T017",
+      "repository_id": "R008",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M003",
+      "task_id": "T017",
+      "repository_id": "R008",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M004",
+      "task_id": "T009",
+      "repository_id": "R004",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M005",
+      "task_id": "T009",
+      "repository_id": "R004",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M006",
+      "task_id": "T009",
+      "repository_id": "R004",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M007",
+      "task_id": "T040",
+      "repository_id": "R020",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M008",
+      "task_id": "T040",
+      "repository_id": "R020",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M009",
+      "task_id": "T040",
+      "repository_id": "R020",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M010",
+      "task_id": "T036",
+      "repository_id": "R019",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M011",
+      "task_id": "T036",
+      "repository_id": "R019",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M012",
+      "task_id": "T036",
+      "repository_id": "R019",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M013",
+      "task_id": "T023",
+      "repository_id": "R013",
+      "arm": "A",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M014",
+      "task_id": "T023",
+      "repository_id": "R013",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M015",
+      "task_id": "T023",
+      "repository_id": "R013",
+      "arm": "B",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M016",
+      "task_id": "T022",
+      "repository_id": "R012",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M017",
+      "task_id": "T022",
+      "repository_id": "R012",
+      "arm": "A",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M018",
+      "task_id": "T022",
+      "repository_id": "R012",
+      "arm": "B",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M019",
+      "task_id": "T041",
+      "repository_id": "R021",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M020",
+      "task_id": "T041",
+      "repository_id": "R021",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M021",
+      "task_id": "T041",
+      "repository_id": "R021",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "project_unexposed_candidates_2"
+    },
+    {
+      "cell_id": "M022",
+      "task_id": "T001",
+      "repository_id": "R001",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22",
+      "public_case": "Abjad"
+    },
+    {
+      "cell_id": "M023",
+      "task_id": "T001",
+      "repository_id": "R001",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22",
+      "public_case": "Abjad"
+    },
+    {
+      "cell_id": "M024",
+      "task_id": "T001",
+      "repository_id": "R001",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22",
+      "public_case": "Abjad"
+    },
+    {
+      "cell_id": "M025",
+      "task_id": "T011",
+      "repository_id": "R006",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M026",
+      "task_id": "T011",
+      "repository_id": "R006",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M027",
+      "task_id": "T011",
+      "repository_id": "R006",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M028",
+      "task_id": "T044",
+      "repository_id": "R023",
+      "arm": "B",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M029",
+      "task_id": "T044",
+      "repository_id": "R023",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M030",
+      "task_id": "T044",
+      "repository_id": "R023",
+      "arm": "A",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M031",
+      "task_id": "T034",
+      "repository_id": "R018",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M032",
+      "task_id": "T034",
+      "repository_id": "R018",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M033",
+      "task_id": "T034",
+      "repository_id": "R018",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M034",
+      "task_id": "T028",
+      "repository_id": "R014",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M035",
+      "task_id": "T028",
+      "repository_id": "R014",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M036",
+      "task_id": "T028",
+      "repository_id": "R014",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M037",
+      "task_id": "T007",
+      "repository_id": "R003",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M038",
+      "task_id": "T007",
+      "repository_id": "R003",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M039",
+      "task_id": "T007",
+      "repository_id": "R003",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M040",
+      "task_id": "T016",
+      "repository_id": "R007",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M041",
+      "task_id": "T016",
+      "repository_id": "R007",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M042",
+      "task_id": "T016",
+      "repository_id": "R007",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M043",
+      "task_id": "T021",
+      "repository_id": "R011",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M044",
+      "task_id": "T021",
+      "repository_id": "R011",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M045",
+      "task_id": "T021",
+      "repository_id": "R011",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M046",
+      "task_id": "T010",
+      "repository_id": "R005",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M047",
+      "task_id": "T010",
+      "repository_id": "R005",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M048",
+      "task_id": "T010",
+      "repository_id": "R005",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M049",
+      "task_id": "T019",
+      "repository_id": "R009",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M050",
+      "task_id": "T019",
+      "repository_id": "R009",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M051",
+      "task_id": "T019",
+      "repository_id": "R009",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M052",
+      "task_id": "T032",
+      "repository_id": "R016",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M053",
+      "task_id": "T032",
+      "repository_id": "R016",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M054",
+      "task_id": "T032",
+      "repository_id": "R016",
+      "arm": "B",
+      "original_outcome": "UNKNOWN",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M055",
+      "task_id": "T045",
+      "repository_id": "R024",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M056",
+      "task_id": "T045",
+      "repository_id": "R024",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M057",
+      "task_id": "T045",
+      "repository_id": "R024",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M058",
+      "task_id": "T020",
+      "repository_id": "R010",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M059",
+      "task_id": "T020",
+      "repository_id": "R010",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M060",
+      "task_id": "T020",
+      "repository_id": "R010",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M061",
+      "task_id": "T030",
+      "repository_id": "R015",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M062",
+      "task_id": "T030",
+      "repository_id": "R015",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M063",
+      "task_id": "T030",
+      "repository_id": "R015",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M064",
+      "task_id": "T043",
+      "repository_id": "R022",
+      "arm": "C",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M065",
+      "task_id": "T043",
+      "repository_id": "R022",
+      "arm": "B",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M066",
+      "task_id": "T043",
+      "repository_id": "R022",
+      "arm": "A",
+      "original_outcome": "FAIL",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M067",
+      "task_id": "T002",
+      "repository_id": "R002",
+      "arm": "B",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M068",
+      "task_id": "T002",
+      "repository_id": "R002",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M069",
+      "task_id": "T002",
+      "repository_id": "R002",
+      "arm": "A",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M070",
+      "task_id": "T033",
+      "repository_id": "R017",
+      "arm": "B",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M071",
+      "task_id": "T033",
+      "repository_id": "R017",
+      "arm": "A",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    },
+    {
+      "cell_id": "M072",
+      "task_id": "T033",
+      "repository_id": "R017",
+      "arm": "C",
+      "original_outcome": "PASS",
+      "exposure_stratum": "reused_DEV_22"
+    }
+  ],
+  "frozen_protocol": {
+    "model": "Gemma-4-31B QAT unadapted",
+    "seed": 20261018,
+    "generation": {
+      "temperature": 0.2,
+      "top_p": 0.95,
+      "max_output_tokens": 8192,
+      "thinking_budget": 4096,
+      "include_thoughts": true
+    },
+    "limits": {
+      "agent_seconds": 480,
+      "counted_tools": 28,
+      "turns": 80,
+      "command_seconds": 240
+    },
+    "uncounted_tools": [
+      "get_status",
+      "submit_patch"
+    ],
+    "orders": [
+      [
+        "A",
+        "B",
+        "C"
+      ],
+      [
+        "B",
+        "C",
+        "A"
+      ],
+      [
+        "C",
+        "A",
+        "B"
+      ],
+      [
+        "C",
+        "B",
+        "A"
+      ],
+      [
+        "A",
+        "C",
+        "B"
+      ],
+      [
+        "B",
+        "A",
+        "C"
+      ]
+    ],
+    "primary_contrasts": [
+      "C-A",
+      "C-B"
+    ],
+    "secondary_contrast": "B-A",
+    "historical_A_reuse": false,
+    "prompt_selection_on_smoke_scores": false,
+    "task_outcome_selection_or_replacement": false,
+    "local_study_lock_utc": "2026-11-09T01:48:44.258346+00:00",
+    "main_generations": 72,
+    "main_tasks": 24,
+    "main_repositories": 24,
+    "exposed_engineering_smokes_excluded": 6,
+    "registration_kind": "local hash-pinned file; not a public registry"
+  }
+}

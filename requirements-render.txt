@@ -1,0 +1,3 @@
+# Optional PDF presentation build only. Statistical verification and SVG generation use stdlib.
+reportlab==5.1.0
+svglib==2.4.0
