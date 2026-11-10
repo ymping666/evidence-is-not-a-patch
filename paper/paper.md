@@ -1,5 +1,7 @@
 # From Local Improvement to Verified Repair: A Cross-Intervention Delivery Audit
 
+**Author:** YimingPing
+
 **Subtitle:** Source-bound evidence, three-state check replay, and an exploratory prompt-only test
 
 **Artifact repository:** [https://github.com/ymping666/evidence-is-not-a-patch](https://github.com/ymping666/evidence-is-not-a-patch)
