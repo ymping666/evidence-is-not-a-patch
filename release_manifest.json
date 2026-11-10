@@ -240,8 +240,8 @@
     },
     {
       "path": "paper/build_receipt.json",
-      "bytes": 2591,
-      "sha256": "c0b38a458a6d3790d3560cf26beb632052c03dd86cbf6cc2f91692956bc4d460",
+      "bytes": 2756,
+      "sha256": "2e94ef08bfa6153d8aa6f3535ced6027dc46162cb7e684de81afa09a40577ac7",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -272,16 +272,16 @@
     },
     {
       "path": "paper/paper.md",
-      "bytes": 20889,
-      "sha256": "256e900517b2d8bb02d02a6c84ce52fb7f162c1bf80ef10f398fb05a626c71f7",
+      "bytes": 20913,
+      "sha256": "6bf2371e358735d9d7f4e8c1647bdf18b68823108a71d99e9492a03e424e2ba4",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 146389,
-      "sha256": "51532c686cf63e945f8c4d960d11f10419aacf198ff7b3ff0d742e581749b95c",
+      "bytes": 146431,
+      "sha256": "8de319dc1c9249d2599f1ef13a9dc3320e313eaa02f43211aa29124aaa4d02a7",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -304,8 +304,8 @@
     },
     {
       "path": "scripts/build_pdf.py",
-      "bytes": 9179,
-      "sha256": "7a9d577e48ddb8b983005ca8e17c1bbdebbcdac4c6bf0845f14ffe4b6e24789a",
+      "bytes": 9475,
+      "sha256": "2520572a55961995ecb539859dfbd7f20875a80a38f424f8fefb1198c21cfa4b",
       "category": "new_statistical_or_presentation_utility",
       "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
       "public_release_authorized": true

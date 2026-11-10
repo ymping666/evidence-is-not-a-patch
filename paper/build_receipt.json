@@ -2,14 +2,14 @@
   "schema": "PUBLIC_PAPER_BUILD_RECEIPT_V1",
   "release_version": "2026-11-09",
   "frozen_parent_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
-  "public_markdown_sha256": "256e900517b2d8bb02d02a6c84ce52fb7f162c1bf80ef10f398fb05a626c71f7",
-  "public_PDF_sha256": "51532c686cf63e945f8c4d960d11f10419aacf198ff7b3ff0d742e581749b95c",
+  "public_markdown_sha256": "6bf2371e358735d9d7f4e8c1647bdf18b68823108a71d99e9492a03e424e2ba4",
+  "public_PDF_sha256": "8de319dc1c9249d2599f1ef13a9dc3320e313eaa02f43211aa29124aaa4d02a7",
   "PDF_pages": 6,
   "word_counts": {
-    "markdown_whitespace_including_tables_captions_references": 2731,
-    "markdown_lexical_including_tables_captions_references": 2899,
-    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2786,
-    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2921,
+    "markdown_whitespace_including_tables_captions_references": 2733,
+    "markdown_lexical_including_tables_captions_references": 2901,
+    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2787,
+    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2922,
     "cap": 3000,
     "reference_or_footer_exemption_used": false
   },
@@ -20,6 +20,7 @@
     "Linked the public artifact in the manuscript, shortened Figure 1 labels, embedded licensed DejaVu font subsets, and kept each table with its caption",
     "Audited official Kaggle Paper Track requirements, tightened the source-bound evidence argument, normalized first-party paper citations (including SWE-bench ICLR 2024), and clarified locally prespecified versus exploratory interventions; no experimental outcome changed",
     "Placed the complete clickable GitHub artifact URL under the title and subtitle on page 1",
+    "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged",
     "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged",
     "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged",
     "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged"
