@@ -81,6 +81,7 @@ def main():
     width=A4[0]-34*mm
     styles=getSampleStyleSheet()
     styles.add(ParagraphStyle(name='PaperTitle',fontName='PaperSerif-Bold',fontSize=18,leading=22,spaceAfter=9,textColor=colors.HexColor('#182b3a')))
+    styles.add(ParagraphStyle(name='PaperAuthor',fontName='PaperSerif',fontSize=11,leading=14,spaceAfter=5,textColor=colors.HexColor('#182b3a'),alignment=TA_CENTER))
     styles.add(ParagraphStyle(name='PaperSubtitle',fontName='PaperSerif-Italic',fontSize=10,leading=13,spaceAfter=11))
     styles.add(ParagraphStyle(name='PaperArtifact',fontName='PaperSans',fontSize=8.5,leading=12,spaceAfter=10,textColor=colors.HexColor('#285f85')))
     styles.add(ParagraphStyle(name='PaperBody',fontName='PaperSerif',fontSize=9.5,leading=12.5,spaceAfter=5.5))
@@ -93,6 +94,7 @@ def main():
     while i<len(blocks):
         block=blocks[i].strip()
         if block.startswith('# '):story.append(Paragraph(markup(block[2:]),styles['PaperTitle']))
+        elif block.startswith('**Author:**'):story.append(Paragraph(markup(block.replace('**Author:**','').strip()),styles['PaperAuthor']))
         elif block.startswith('**Subtitle:**'):story.append(Paragraph(markup(block.replace('**Subtitle:**','').strip()),styles['PaperSubtitle']))
         elif block.startswith('**Artifact repository:**'):story.append(Paragraph(markup(block),styles['PaperArtifact']))
         elif block.startswith('## '):
@@ -132,7 +134,7 @@ def main():
         canvas.drawRightString(A4[0]-17*mm,12*mm,str(doc.page));canvas.restoreState()
     args.output.parent.mkdir(parents=True,exist_ok=True)
     doc=SimpleDocTemplate(str(args.output),pagesize=A4,rightMargin=17*mm,leftMargin=17*mm,topMargin=16*mm,bottomMargin=19*mm,
-          title='From Local Improvement to Verified Repair: A Cross-Intervention Delivery Audit',author='Project contributors',
+          title='From Local Improvement to Verified Repair: A Cross-Intervention Delivery Audit',author='YimingPing',
           subject='Public research release; source-state audit and exploratory prompt-only SEAL intervention',creator='ReportLab; local Markdown/SVG build',invariant=1)
     doc.build(story,onFirstPage=page,onLaterPages=page)
     print('Built PDF from released Markdown and editable SVGs: '+hashlib.sha256(args.output.read_bytes()).hexdigest())
