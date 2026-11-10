@@ -2,8 +2,8 @@
   "schema": "PUBLIC_PAPER_BUILD_RECEIPT_V1",
   "release_version": "2026-11-09",
   "frozen_parent_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
-  "public_markdown_sha256": "eb0d1b9597a2291660c3702b0d0165d0969fe584bb5be44109fcc5e21b102370",
-  "public_PDF_sha256": "c9e5cc8d5560be7092d99c6ae6214ed39418da17baf5266c9d21f9d53fa50733",
+  "public_markdown_sha256": "ab2100710662ce18e33e5cad988e25402b2121050e6cab2865ddeccf170d52be",
+  "public_PDF_sha256": "f06bf9a9eb7768b8257cd17318a558ae67f217387383e77e50e2d2c45335d30e",
   "PDF_pages": 6,
   "word_counts": {
     "markdown_whitespace_including_tables_captions_references": 2678,
@@ -20,6 +20,7 @@
     "Linked the public artifact in the manuscript, shortened Figure 1 labels, embedded licensed DejaVu font subsets, and kept each table with its caption",
     "Audited official Kaggle Paper Track requirements, tightened the source-bound evidence argument, normalized first-party paper citations (including SWE-bench ICLR 2024), and clarified locally prespecified versus exploratory interventions; no experimental outcome changed",
     "Placed the complete clickable GitHub artifact URL under the title and subtitle on page 1",
+    "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged",
     "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged"
   ],
   "new_agent_generations": 0,
