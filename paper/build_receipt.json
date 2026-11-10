@@ -2,14 +2,14 @@
   "schema": "PUBLIC_PAPER_BUILD_RECEIPT_V1",
   "release_version": "2026-11-09",
   "frozen_parent_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
-  "public_markdown_sha256": "0c2e94a28e10bbb038619adedab9082f4453c36bc3c41f141706e99fcd251bde",
-  "public_PDF_sha256": "5b406545830d9b7ca5a8f0edb3d1a36cdb9e9132b18eeca12cb219c32e21e007",
+  "public_markdown_sha256": "eb0d1b9597a2291660c3702b0d0165d0969fe584bb5be44109fcc5e21b102370",
+  "public_PDF_sha256": "c9e5cc8d5560be7092d99c6ae6214ed39418da17baf5266c9d21f9d53fa50733",
   "PDF_pages": 6,
   "word_counts": {
-    "markdown_whitespace_including_tables_captions_references": 2707,
-    "markdown_lexical_including_tables_captions_references": 2806,
-    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2762,
-    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2890,
+    "markdown_whitespace_including_tables_captions_references": 2678,
+    "markdown_lexical_including_tables_captions_references": 2837,
+    "PDF_whitespace_including_figure_text_repeated_headers_footers_page_numbers_references": 2733,
+    "PDF_lexical_including_figure_text_repeated_headers_footers_page_numbers_references": 2866,
     "cap": 3000,
     "reference_or_footer_exemption_used": false
   },
@@ -19,7 +19,8 @@
     "Replaced obsolete private-artifact availability paragraph with public-release scope",
     "Linked the public artifact in the manuscript, shortened Figure 1 labels, embedded licensed DejaVu font subsets, and kept each table with its caption",
     "Audited official Kaggle Paper Track requirements, tightened the source-bound evidence argument, normalized first-party paper citations (including SWE-bench ICLR 2024), and clarified locally prespecified versus exploratory interventions; no experimental outcome changed",
-    "Placed the complete clickable GitHub artifact URL under the title and subtitle on page 1"
+    "Placed the complete clickable GitHub artifact URL under the title and subtitle on page 1",
+    "Cited seven additional verified first-party works across introduction and related work (17 references total), shortened repeated prose; experiments unchanged"
   ],
   "new_agent_generations": 0,
   "new_task_scoring_executions": 0,

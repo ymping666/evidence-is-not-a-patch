@@ -2,7 +2,7 @@
   "schema": "SELECTED_PUBLIC_RESEARCH_RELEASE_MANIFEST_V1",
   "release_version": "2026-11-09",
   "repository": "ymping666/evidence-is-not-a-patch",
-  "file_count_excluding_manifest": 38,
+  "file_count_excluding_manifest": 40,
   "manifest_is_separate_control_file": true,
   "private_git_history_imported": false,
   "frozen_parent_manuscript_sha256": "16b1f3841d8043a755553837e3463db44dacb198207d7767e1c6138635fd9c04",
@@ -22,6 +22,14 @@
     "private Git commits, branches and objects"
   ],
   "files": [
+    {
+      "path": ".github/workflows/rebuild-paper.yml",
+      "category": "research_documentation_or_configuration",
+      "rights_basis": "User-authorized public research reproducibility workflow; first-party code",
+      "public_release_authorized": true,
+      "bytes": 1392,
+      "sha256": "bcb88fcc379b9394c6188ca78533e064a76495f0d13ba8dbfce246a1ddfc2617"
+    },
     {
       "path": ".gitignore",
       "bytes": 80,
@@ -232,8 +240,8 @@
     },
     {
       "path": "paper/build_receipt.json",
-      "bytes": 2096,
-      "sha256": "6ba7a6c7f96b992855165ab8da21b7e875ce92c5b93b33044eb9414b61b120cf",
+      "bytes": 2261,
+      "sha256": "d389883bb2248e7df088132c2f36bc4cf83694382037b40e70b467c2361691db",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
@@ -264,24 +272,24 @@
     },
     {
       "path": "paper/paper.md",
-      "bytes": 20195,
-      "sha256": "0c2e94a28e10bbb038619adedab9082f4453c36bc3c41f141706e99fcd251bde",
+      "bytes": 20420,
+      "sha256": "eb0d1b9597a2291660c3702b0d0165d0969fe584bb5be44109fcc5e21b102370",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/paper.pdf",
-      "bytes": 143856,
-      "sha256": "5b406545830d9b7ca5a8f0edb3d1a36cdb9e9132b18eeca12cb219c32e21e007",
+      "bytes": 145679,
+      "sha256": "c9e5cc8d5560be7092d99c6ae6214ed39418da17baf5266c9d21f9d53fa50733",
       "category": "research_manuscript_or_authored_vector_figure",
       "rights_basis": "User-authorized publication; first-party rights retained as described in RIGHTS.md",
       "public_release_authorized": true
     },
     {
       "path": "paper/references.bib",
-      "bytes": 5160,
-      "sha256": "790f773ac4606bb9c5905c9ef968882a82d9e90632dd0efb6d2a6ab66f78866b",
+      "bytes": 8449,
+      "sha256": "93e41c431e042ee06243564c89afc6501520fd559148e650c3a2ad3c3d71a5fc",
       "category": "bibliographic_metadata",
       "rights_basis": "Citation metadata and attribution only; no cited paper body redistributed",
       "public_release_authorized": true
@@ -309,6 +317,14 @@
       "category": "new_statistical_or_presentation_utility",
       "rights_basis": "User-authorized publication and verification workflow; no vendored scorer or dependency code",
       "public_release_authorized": true
+    },
+    {
+      "path": "scripts/rebuild_release.py",
+      "category": "new_statistical_or_presentation_utility",
+      "rights_basis": "User-authorized public research reproducibility workflow; first-party code",
+      "public_release_authorized": true,
+      "bytes": 2576,
+      "sha256": "0b58327fe94a92f5483b147b776dd30c96d7e72642626a38169241f0d05fc5ed"
     },
     {
       "path": "scripts/render_figures.py",
