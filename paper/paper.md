@@ -10,7 +10,7 @@ A check evaluates one source state; a coding agent is judged on the patch it eve
 
 ## 1. Introduction
 
-Repository-repair systems range from tool-rich SWE-agent [11] to structured Agentless [12], yet are scored on delivered patches [2]. A check can inspect obsolete source, fail to distinguish wrong from correct code, or validate an edit absent from the final artifact. Prior patch research establishes that passing tests need not imply correctness [14]; benchmark audits reveal additional evaluation defects [17]. We examine a different gap: whether local execution evidence applies to the code ultimately delivered.
+Repository-repair systems range from tool-rich SWE-agent [1] to structured Agentless [2], yet are scored on delivered patches [3]. A check can inspect obsolete source, fail to distinguish wrong from correct code, or validate an edit absent from the final artifact. Prior patch research establishes that passing tests need not imply correctness [4]; benchmark audits reveal additional evaluation defects [5]. We examine a different gap: whether local execution evidence applies to the code ultimately delivered.
 
 We ask: **Which source did a check inspect? Can the same check distinguish source states? Did a useful edit survive handoff?** We bind evidence to reconstructed source hashes, replay fixed checks on three states, and inspect delivery counterexamples across interventions. A separate prompt-only test probes this chain without identifying component causality.
 
@@ -20,7 +20,7 @@ We ask: **Which source did a check inspect? Can the same check distinguish sourc
 
 ## 2. Paired interventions and outcomes
 
-The scaffold is Henao's Budget-Fit Single Agent V5 [1], deploying Gemma-4-31B QAT. Historical complete-agent panels generally allow eight minutes, 28 counted tools, 80 turns, and 8,192 output tokens. P8 instead refines supplied candidates with eight additional tools, twelve model requests, and 480 seconds. Historical seeds were uncontrolled; P120 fixes its seed. Panels are paired within protocol, not interchangeable randomized arms.
+The scaffold is Henao's Budget-Fit Single Agent V5 [6], deploying Gemma-4-31B QAT. Historical complete-agent panels generally allow eight minutes, 28 counted tools, 80 turns, and 8,192 output tokens. P8 instead refines supplied candidates with eight additional tools, twelve model requests, and 480 seconds. Historical seeds were uncontrolled; P120 fixes its seed. Panels are paired within protocol, not interchangeable randomized arms.
 
 | Panel and intervention | Intermediate result | Complete-agent outcome |
 | --- | --- | --- |
@@ -112,11 +112,11 @@ No failing check occurs between C's two edits. C performs no post-edit check; al
 
 ## 7. Related work and scope of novelty
 
-**Agent architectures and learning.** SWE-bench [2] evaluates repository repairs, while SWE-agent [11] designs tool interfaces and Agentless [12] structures localization, repair, and validation. SWE-Gym [3] trains repair agents and verifiers; SWE-Prime [4] selects trajectories. Our cross-intervention audit instead tests whether local progress reaches the final artifact.
+**Agent architectures and learning.** SWE-bench [3] evaluates repository repairs, while SWE-agent [1] designs tool interfaces and Agentless [2] structures localization, repair, and validation. SWE-Gym [7] trains repair agents and verifiers; SWE-Prime [8] selects trajectories. Our cross-intervention audit instead tests whether local progress reaches the final artifact.
 
-**Testing and patch correctness.** Qi et al. [14] showed that test-plausible patches can be incorrect; TestGen-LLM [13] qualifies generated tests, and ExecCritic [6] separates test construction from repair. We instead ask whether an unchanged check distinguishes original, candidate, and reference code, and whether it inspected the version delivered.
+**Testing and patch correctness.** Qi et al. [4] showed that test-plausible patches can be incorrect; TestGen-LLM [9] qualifies generated tests, and ExecCritic [10] separates test construction from repair. We instead ask whether an unchanged check distinguishes original, candidate, and reference code, and whether it inspected the version delivered.
 
-**Feedback, replay, and reliability.** Reflexion [15] and Self-Refine [16] exploit language feedback; SWE-Replay [5] branches agent trajectories, unlike our fixed-source reexecution. Trajectory studies examine success/failure strategies [7], temporal failure processes [8], and submission-versus-resolution gaps [9]. Trial by Trace [10] audits harness reliability; SWE-Bench Pro Verified [17] addresses benchmark leakage and task defects. Our focus is version-bound check-to-artifact continuity, not a new failure taxonomy or proven repair method.
+**Feedback, replay, and reliability.** Reflexion [11] and Self-Refine [12] exploit language feedback; SWE-Replay [13] branches agent trajectories, unlike our fixed-source reexecution. Trajectory studies examine success/failure strategies [14], temporal failure processes [15], and submission-versus-resolution gaps [16]. Trial by Trace [17] audits harness reliability; SWE-Bench Pro Verified [5] addresses benchmark leakage and task defects. Our focus is version-bound check-to-artifact continuity, not a new failure taxonomy or proven repair method.
 
 ## 8. Limitations, artifacts, and conclusion
 
@@ -130,20 +130,20 @@ The result is a **source-bound audit protocol** that exposes separate breaks in 
 
 ## References
 
-1. Henao, W. E. (2026). [*Gemma 4 Agent: Budget-Fit Single Agent*](https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852) (Version 5). Kaggle Notebook.
-2. Jimenez, C. E., et al. (2024). [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html). ICLR.
-3. Pan, J., et al. (2025). [*Training Software Engineering Agents and Verifiers with SWE-Gym*](https://proceedings.mlr.press/v267/pan25g.html). ICML, PMLR 267:47717-47737.
-4. Zheng, D., et al. (2026). [*SWE-Prime: Fewer Trajectories, Better Performance*](https://arxiv.org/abs/2608.27449v1). arXiv:2608.27449.
-5. Ding, Y. and Zhang, L. (2026). [*SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents*](https://arxiv.org/abs/2601.22129v1). arXiv:2601.22129.
-6. Tao, L., et al. (2026). [*ExecCritic: Learn to Test, Test to Improve for Coding Agents*](https://arxiv.org/abs/2609.09133v1). arXiv:2609.09133.
-7. Majgaonkar, O., et al. (2025). [*Understanding Code Agent Behaviour: An Empirical Study of Success and Failure Trajectories*](https://arxiv.org/abs/2511.00197v1). arXiv:2511.00197.
-8. Zhao, X., et al. (2026). [*Failure as a Process: An Anatomy of CLI Coding Agent Trajectories*](https://arxiv.org/abs/2607.09510v1). arXiv:2607.09510.
-9. Mehta, A. (2026). [*Confident and Wrong: Silent Semantic Failures in Coding Agents*](https://arxiv.org/abs/2603.25764v3). arXiv:2603.25764.
-10. Cao, Z., et al. (2026). [*Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution*](https://arxiv.org/abs/2610.32285v1). arXiv:2610.32285.
-11. Yang, J., et al. (2024). [*SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering*](https://papers.nips.cc/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html). NeurIPS 37.
-12. Xia, C. S., et al. (2025). [*Demystifying LLM-Based Software Engineering Agents*](https://doi.org/10.1145/3715754). Proc. ACM Softw. Eng. 2(FSE):801-824.
-13. Alshahwan, N., et al. (2024). [*Automated Unit Test Improvement using Large Language Models at Meta*](https://doi.org/10.1145/3663529.3663839). FSE 2024 Companion, 185-196.
-14. Qi, Z., Long, F., Achour, S., and Rinard, M. (2015). [*An Analysis of Patch Plausibility and Correctness for Generate-and-Validate Patch Generation Systems*](https://doi.org/10.1145/2771783.2771791). ISSTA, 24-36.
-15. Shinn, N., et al. (2023). [*Reflexion: Language Agents with Verbal Reinforcement Learning*](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html). NeurIPS 36.
-16. Madaan, A., et al. (2023). [*Self-Refine: Iterative Refinement with Self-Feedback*](https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html). NeurIPS 36.
-17. Zheng, P., et al. (2026). [*SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents*](https://arxiv.org/abs/2609.08149). arXiv:2609.08149.
+1. Yang, J., et al. (2024). [*SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering*](https://papers.nips.cc/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html). NeurIPS 37.
+2. Xia, C. S., et al. (2025). [*Demystifying LLM-Based Software Engineering Agents*](https://doi.org/10.1145/3715754). Proc. ACM Softw. Eng. 2(FSE):801-824.
+3. Jimenez, C. E., et al. (2024). [*SWE-bench: Can Language Models Resolve Real-World GitHub Issues?*](https://proceedings.iclr.cc/paper_files/paper/2024/hash/edac78c3e300629acfe6cbe9ca88fb84-Abstract-Conference.html). ICLR.
+4. Qi, Z., Long, F., Achour, S., and Rinard, M. (2015). [*An Analysis of Patch Plausibility and Correctness for Generate-and-Validate Patch Generation Systems*](https://doi.org/10.1145/2771783.2771791). ISSTA, 24-36.
+5. Zheng, P., et al. (2026). [*SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents*](https://arxiv.org/abs/2609.08149). arXiv:2609.08149.
+6. Henao, W. E. (2026). [*Gemma 4 Agent: Budget-Fit Single Agent*](https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852) (Version 5). Kaggle Notebook.
+7. Pan, J., et al. (2025). [*Training Software Engineering Agents and Verifiers with SWE-Gym*](https://proceedings.mlr.press/v267/pan25g.html). ICML, PMLR 267:47717-47737.
+8. Zheng, D., et al. (2026). [*SWE-Prime: Fewer Trajectories, Better Performance*](https://arxiv.org/abs/2608.27449v1). arXiv:2608.27449.
+9. Alshahwan, N., et al. (2024). [*Automated Unit Test Improvement using Large Language Models at Meta*](https://doi.org/10.1145/3663529.3663839). FSE 2024 Companion, 185-196.
+10. Tao, L., et al. (2026). [*ExecCritic: Learn to Test, Test to Improve for Coding Agents*](https://arxiv.org/abs/2609.09133v1). arXiv:2609.09133.
+11. Shinn, N., et al. (2023). [*Reflexion: Language Agents with Verbal Reinforcement Learning*](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html). NeurIPS 36.
+12. Madaan, A., et al. (2023). [*Self-Refine: Iterative Refinement with Self-Feedback*](https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html). NeurIPS 36.
+13. Ding, Y. and Zhang, L. (2026). [*SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents*](https://arxiv.org/abs/2601.22129v1). arXiv:2601.22129.
+14. Majgaonkar, O., et al. (2025). [*Understanding Code Agent Behaviour: An Empirical Study of Success and Failure Trajectories*](https://arxiv.org/abs/2511.00197v1). arXiv:2511.00197.
+15. Zhao, X., et al. (2026). [*Failure as a Process: An Anatomy of CLI Coding Agent Trajectories*](https://arxiv.org/abs/2607.09510v1). arXiv:2607.09510.
+16. Mehta, A. (2026). [*Confident and Wrong: Silent Semantic Failures in Coding Agents*](https://arxiv.org/abs/2603.25764v3). arXiv:2603.25764.
+17. Cao, Z., et al. (2026). [*Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution*](https://arxiv.org/abs/2610.32285v1). arXiv:2610.32285.
