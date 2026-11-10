@@ -118,9 +118,11 @@ No failing check occurs between C's two edits. C performs no post-edit check; al
 
 **Feedback, replay, and reliability.** Reflexion [11] and Self-Refine [12] exploit language feedback; SWE-Replay [13] branches agent trajectories, unlike our fixed-source reexecution. Trajectory studies examine success/failure strategies [14], temporal failure processes [15], and submission-versus-resolution gaps [16]. Trial by Trace [17] audits harness reliability; SWE-Bench Pro Verified [5] addresses benchmark leakage and task defects. Our focus is version-bound check-to-artifact continuity, not a new failure taxonomy or proven repair method.
 
+**Closest completion-reliability study.** Gao et al. [18] analyze stale feedback, checkpoint preservation, and source-bound verifier evidence in coding loops. Our complementary empirical evidence is a cross-intervention audit of historical checks, plus 314 fixed-check original/agent/reference replays tied to delivered source, not a new state-binding contract.
+
 ## 8. Limitations, artifacts, and conclusion
 
-The historical panels share development tasks and differ in protocol; they do not establish cross-task generalization or the ineffectiveness of fine-tuning and verification. Replay relies on reconstructed source and qualified environments, with eligibility bias and possible probe-internal randomness. No cross-hardware timing or independence-based significance is claimed.
+Historical panels share development tasks under distinct protocols. Replay assumes reconstructed source and selected environments, with possible probe-internal randomness. Neither task generalization nor independence-based statistical significance is claimed.
 
 Targeted semantic inspection covered 148 assistant-inspected units, including 61 checks, and four deeper cases; there were **zero human confirmations**. Labels and supplementary counts are public.
 
@@ -147,3 +149,4 @@ The result is a **source-bound audit protocol** that exposes separate breaks in 
 15. Zhao, X., et al. (2026). [*Failure as a Process: An Anatomy of CLI Coding Agent Trajectories*](https://arxiv.org/abs/2607.09510v1). arXiv:2607.09510.
 16. Mehta, A. (2026). [*Confident and Wrong: Silent Semantic Failures in Coding Agents*](https://arxiv.org/abs/2603.25764v3). arXiv:2603.25764.
 17. Cao, Z., et al. (2026). [*Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution*](https://arxiv.org/abs/2610.32285v1). arXiv:2610.32285.
+18. Gao, X., Yang, J., and Yang, Q. (2026). [*Looping Is Not Reliability: State-Bound Evidence and Typed Revision Contracts for Agentic Code Repair*](https://doi.org/10.1145/3843282.3844438). AgenticDev 2026 (ASE workshop).
